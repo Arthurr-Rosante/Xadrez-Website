@@ -390,3 +390,15 @@
 
 
 
+/*pagina2 rank*/
+
+.rank1{
+border: rgb(55, 0, 255);
+border-radius: 10px;
+border-style: solid;
+}
+
+.rank1img{
+    width: 700px;
+}
+
