@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastroStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <section class="cadastroSection1">
+            <div class="welcome">
+                <h1 class="title">Seja Bem-vindo</h1>
+                <p class="desc">Para prosseguir cadastre-se no site ou <br> logue com sua conta já existente.</p>
+            </div>
+            <img src="assets/img/Mobile life.gif" class="gif">
+        </section>
+
+        <section class="cadastroSection2">
+            <h1 class="title">Cadastre-se</h1>
+            <form action="index.html" method="post">
+    
+                <div class="nameContent">
+                    <input type="text" id="inName" placeholder="Nome" required>
+                    <!--boxicon-->
+                </div>
+                <div class="emailContent">
+                    <input type="email" id="inEmail" placeholder="Email" required>
+                    <!--boxicon-->
+                </div>
+                <div class="senhaContent">
+                    <p>Digite sua Senha:</p>
+                    <input type="password" id="inSenha" required>
+                    <p>Confirme sua Senha:</p>
+                    <input type="password" id="inCofirmar" required>
+                </div>
+                <div class="lembrarContent">
+                    <input type="checkbox" id="inLembrar">
+                    <p>Lembrar-me</p>
+                </div>
+                <div class="b-content">
+                    <button type="submit">Cadastrar-se</button>
+                    <p>Já tem uma conta ?</p>
+                    <button class="b-login">Fazer Login</button>
+                </div>
+            </form>
+        </section>
+
+    </div>
+
+</body>
+</html>
