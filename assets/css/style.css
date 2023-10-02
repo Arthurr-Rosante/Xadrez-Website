@@ -28,7 +28,9 @@
 
         position: relative;
         transition: display 350ms linear;
+        overflow-y: hidden; 
         display: none;
+        z-index: 2;
     }
    
     .content {
@@ -164,7 +166,7 @@
     z-index: 2;
 }
 .botao-aprender{
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     border-style: solid;
     border-color: rgb(198, 121, 221);
     border-radius: 10px;
@@ -190,7 +192,7 @@
     content: " ";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -202,7 +204,7 @@
     content: " ";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -214,7 +216,7 @@
     content: " ";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -247,8 +249,7 @@
     box-shadow: 0 0 20px rgb(163, 163, 163);
 }
 .botao-entrar{
-    background-color: rgb(198, 121, 221);
-    border-style: solid;
+    background: linear-gradient(90deg, #9B00F5, #c765ff);    border-style: solid;
     border-color: rgb(198, 121, 221);
     border-radius: 10px;
     width: 80%;
@@ -278,16 +279,16 @@
     top: -1vh;
     z-index: 1;
 }
-.titulo{
+.back-titulo{
     position: relative;
     left: 10%;
     top: 10%;
-    font-size: 300%;
-    background-color: rgb(198, 121, 221);
-    width: 8.5%;
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    width: 25%;
+    height: 20%;
     border-radius: 10px;
-    padding: 0.5%;
 }
+.titulo
 
 
 
