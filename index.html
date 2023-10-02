@@ -11,22 +11,32 @@
         <title>Site-Xadrez</title>
 </head>
 <body>
-    teste
-
         <!-- Formulário Cadastre-se / Login   -->
 
-            <div class="frmContainer">
-                <form action="#" method="post">
+                <form method="post" class="frm">
 
-                    <label for="nome" class="opt">
-                        <input type="text" id="inNome">
-                    </label>
-
+                    <div class="content">
+                        <div class="optUser">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" id="inUser" placeholder="Usuário" required>
+                        </div>
+                        <div class="optSenha">
+                            <i class='bx bxs-lock' ></i>
+                            <input type="password" id="inSenha" placeholder="Senha" maxlength="12" required>
+                        </div>
+                        <button class="b-Concluir">Entrar</button>
+                        <div class="registre-se">
+                            <p>Não tem uma conta ainda?</p>
+                            <button class="b-registrar">Registre-se</button>
+                        </div>
+                    </div>
+                    <img src="assets/img/chess-pieces.png" alt="" class="logImg">
+                
                 </form>
-            </div>
 
         <!-- Formulário Cadastre-se / Login Fim  -->
- <!--Pag1-->zx'
+
+ <!--Pag1-->
     <!--Menu-->
     <div class="menu">
         <a href="">
@@ -43,7 +53,6 @@
             ENTRAR
         </button>
         <div class="icones-menu">
-
             <div class="container-icone1">
                 <i class='bx bxs-book-bookmark icone1'></i>
             </div>
@@ -59,12 +68,17 @@
 
     </div>
     <!--Fim menu-->
+    
+    
+    <!--Pag1-->
     <div class="pag1">
 
         <h1 class="titulo">Titulo</h1>
  
     </div>
     <!--Fim pag1-->
-<script src="assets/js/index.js"></script> 
+
+<script src="assets/js/index.js"></script>
+<script src="assets/js/logarCadastro.js"></script> 
 </body>
 </html>

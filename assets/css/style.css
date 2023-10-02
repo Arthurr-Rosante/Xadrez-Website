@@ -2,8 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden; 
 }
+
 ::-webkit-scrollbar{
     width: 0.5vw;
 }
@@ -12,6 +13,143 @@
     border-radius: 10px;
 
 }
+
+/* Formulario Style */
+
+    .frm {
+        background: linear-gradient(45deg, black 2%, #381E61 80%);
+        width: 40rem;
+        height: 30rem;
+        
+        box-shadow: 0 0 10px #9B00F5;
+        border-radius: 20px;
+        margin: 8rem auto;
+        padding: 10px;
+
+        position: relative;
+        transition: display 350ms linear;
+        display: none;
+    }
+   
+    .content {
+        width: calc(100% - 200px);
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        
+        padding: 20px;
+
+        position: absolute;
+        right: 0;
+    }
+
+    .optUser, .optSenha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+    .optUser #inUser,
+    .optSenha #inSenha {
+        font-size: 20px;
+        padding: 2px 10px 2px 40px;
+        
+        background: transparent;
+        color: white;
+        border: none;
+        border-bottom: 2px solid #63198e;
+        
+        transition: all 250ms linear;
+    }
+
+    #inUser::placeholder,
+    #inSenha::placeholder {
+        color: #9B00F5;
+        font-family: "Mukta";
+    }
+    #inUser:focus, #inSenha:focus {
+        outline-style: none;
+        border-color: #9B00F5;
+    }
+
+    .bxs-lock, .bxs-user {
+        font-size: 20px;
+        color: #9B00F5;
+
+        position: absolute;
+        left: 0px;
+    }
+
+    .b-Concluir {
+        border: transparent;
+        border-radius: 20px;
+        background: linear-gradient(90deg, #9B00F5, #c765ff);
+
+        padding: 5px 20px;
+        width: 300px;
+
+        color: white;
+        font-size: 30px;
+        font-family: "Mukta";
+        cursor: pointer;
+
+        box-shadow: 0 3px 10px #511475;
+        transition: all 250ms linear;
+    }
+
+    .b-Concluir:hover {
+        transform: scale(1.1);
+        box-shadow: 0 5px 10px #8e00e1;
+    }
+
+    .registre-se {
+        display: flex;
+        align-items: center;
+    }
+
+    .registre-se p {
+        font-size: 20px;
+        font-family: "Mukta";
+        color: white;
+    }
+    
+    .b-registrar {
+
+        border: none;
+        outline-style: none;
+        background: transparent;
+        padding-left: 10px;
+
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Mukta";
+        color: #9B00F5;
+
+        transition: all 150ms linear;
+    }
+
+    .b-registrar:hover {
+        color: #d387ff;
+        text-decoration: underline;
+    }
+
+    .logImg {
+        width: 200px;
+        height: 200px;
+        
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+    }
+/* Formulario Style End*/
+
+
 /*menu fixo*/
 .menu{
     background-color: rgb(217, 217, 217);
@@ -150,3 +288,6 @@
     border-radius: 10px;
     padding: 0.5%;
 }
+
+
+
