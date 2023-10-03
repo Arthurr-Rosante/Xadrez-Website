@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastroStyle.css">
+    <link rel="stylesheet" href="assets/css/cadastroStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Link das Fontes usadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mukta:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Link para o BoxIcons -->
     <title>Document</title>
 </head>
 <body>
@@ -23,32 +27,42 @@
             <form action="index.html" method="post">
     
                 <div class="nameContent">
-                    <input type="text" id="inName" placeholder="Nome" required>
-                    <!--boxicon-->
+                    <i class='bx bxs-user'></i>
+                    <input type="text" id="inName" placeholder="Nome" required onfocus="change()">
                 </div>
+
                 <div class="emailContent">
+                    <i class='bx bx-envelope' ></i>
                     <input type="email" id="inEmail" placeholder="Email" required>
-                    <!--boxicon-->
                 </div>
+
                 <div class="senhaContent">
-                    <p>Digite sua Senha:</p>
-                    <input type="password" id="inSenha" required>
-                    <p>Confirme sua Senha:</p>
-                    <input type="password" id="inCofirmar" required>
+                    <i class='bx bxs-show eyeIcon' onclick="showHide()"></i>
+                    <input type="password" id="inSenha" placeholder="Senha" required> 
                 </div>
+                
+                <div class="confirmContent">
+
+                    <i class='bx bxs-lock'></i>
+                    <input type="password" id="inConfirmar" placeholder="Confirmar Senha" required>
+
+                </div>
+
                 <div class="lembrarContent">
                     <input type="checkbox" id="inLembrar">
                     <p>Lembrar-me</p>
                 </div>
+                
+                <button type="submit" class="b-cadastro">CADASTRE-SE</button>
                 <div class="b-content">
-                    <button type="submit">Cadastrar-se</button>
                     <p>Já tem uma conta ?</p>
                     <button class="b-login">Fazer Login</button>
                 </div>
+
             </form>
         </section>
 
     </div>
-
+<script src="assets/js/cadastro.js"></script>
 </body>
 </html>
