@@ -28,7 +28,9 @@
 
         position: relative;
         transition: display 350ms linear;
+        overflow-y: hidden; 
         display: none;
+        z-index: 2;
     }
    
     .content {
@@ -164,7 +166,7 @@
     z-index: 2;
 }
 .botao-aprender{
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     border-style: solid;
     border-color: rgb(198, 121, 221);
     border-radius: 10px;
@@ -187,10 +189,10 @@
     top: 15%;
 }
 .icone1::after{
-    content: " ";
+    content: "";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -202,7 +204,7 @@
     content: " ";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -214,7 +216,7 @@
     content: " ";
     width: 7%;
     height: 0%;
-    background-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
     position: absolute;
     left: 10px;
     transition: 0.3s ease-in-out;
@@ -247,8 +249,7 @@
     box-shadow: 0 0 20px rgb(163, 163, 163);
 }
 .botao-entrar{
-    background-color: rgb(198, 121, 221);
-    border-style: solid;
+    background: linear-gradient(90deg, #9B00F5, #c765ff);    border-style: solid;
     border-color: rgb(198, 121, 221);
     border-radius: 10px;
     width: 80%;
@@ -264,13 +265,73 @@
     background-color: rgb(211, 151, 230);
     border-color: rgb(211, 151, 230);
     box-shadow: 0 0 20px rgb(163, 163, 163);
+    
 }
+/*botão claro e escuro*/
+.botao-escuro{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.switch {
+    background-color: #000000;
+    border-radius: 40px;
+    cursor: pointer;
+
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.b-Check {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%) scaleX(7) scaleY(4);
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
+}
+.b-Check:checked + .switch .ball {
+    transform: translateX(54px);
+}
+
+
+.switch .ball {
+    background-color: white;
+    border-radius: 50%;
+
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 5px;
+    left: 3px;
+
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.bxs-sun {
+    color: #ffa620;
+    font-size: 30px;
+}
+.bxs-moon {
+    color: #fad900;
+    font-size: 30px;
+}
+/* fim botão*/
 /*fim menu fixo*/
 
 /*página 1*/
 
 .pag1{
-    background-color: red;
+    background-color: black;
     width: 90vw;
     height: 85vh;
     position: absolute;
@@ -278,16 +339,66 @@
     top: -1vh;
     z-index: 1;
 }
-.titulo{
+.degrade-pag1{
+    background: linear-gradient(to bottom, #ffffff00,#000000);
+    width: 90vw;
+    height: 85vh;
+    position: absolute;
+    z-index: 2;
+    opacity: 100%;
+    z-index: 1;
+}
+.background-pag1{
+    width: 100%;
+    height: 130%;
+    position: absolute;
+    top: -30%;
+    opacity: 70%;
+}
+.back-titulo{
     position: relative;
-    left: 10%;
+    left: 5%;
     top: 10%;
-    font-size: 300%;
-    background-color: rgb(198, 121, 221);
-    width: 8.5%;
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    width: 50%;
+    height: 20%;
     border-radius: 10px;
-    padding: 0.5%;
+    display: table;
+    z-index: 2;
+}
+.texto-pag1{
+    z-index: 1;
+    color: white;
+    font-size: 350%;
+    position: absolute;
+    top: 65%;
+    left: 7%;
+    max-width: 70%;
+}
+.titulo{
+    font-size: 500%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+.texto-pag1 span{
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
+
+/*pagina2 rank*/
+
+.rank1{
+border: rgb(55, 0, 255);
+border-radius: 10px;
+border-style: solid;
+}
+
+.rank1img{
+    width: 700px;
+}
 
