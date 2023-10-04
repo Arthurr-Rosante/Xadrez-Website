@@ -331,12 +331,11 @@
 /*página 1*/
 
 .pag1{
-    background-color: black;
     width: 90vw;
     height: 85vh;
     position: absolute;
     left: 13vw;
-    top: -1vh;
+    top: 5vh;
     z-index: 1;
 }
 .degrade-pag1{
@@ -400,5 +399,31 @@ border-style: solid;
 
 .rank1img{
     width: 700px;
+}
+section{
+    width: 100%;
+    height: 10vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url(../img/bg1.jpg);
+    height: 90vh;
+}
+section:nth-of-type(3){
+    background-image: url(../img/bg2.jpg);
+    height: 90vh ;
+}
+section:nth-of-type(5){
+    background-image: url(../img/BG3.jpg);
+    height: 90vh ;
+}
+section:nth-of-type(7){
+    background-image: url(../img/bg4.jpg);
+    height: 90vh ;
 }
 
