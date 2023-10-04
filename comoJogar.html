@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/comoJogarStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="pgHeader">
+            <h1 class="title">Aprenda a Jogar Xadrez</h1>
+            <h3 class="subtitle">Jogar xadrez é mais do que saber mover as peças <br>
+                            primeiro vamos ver como organizar o tabuleiro.
+            </h3>
+        </header>
+    
+        <!-- Section 1 -Tabuleiro- -->
+        <section class="section1">
+    
+            <h1 class="title">1. O Tabuleiro</h1>
+            <p class="desc">No Xadrez o tabuleiro é organizado da seguinte forma:</p>
+                <ul class="descUl">
+                    <li>Oito Fileiras (linhas horizontais) organizadas de A até H.</li>
+                    <li>Oito Colunas (linhas verticais) enumeradas de 1 até 8.</li>
+                    <li>O tabuleiro estará disposto corretamente se a primeira casa, <br>
+                        no topo da esquerda para a direita, for a <strong>A8</strong>.
+                        <span>
+                            (isto é, a casa branca de posição A horizontalmente e 8 verticalmente).
+                        </span>
+                    </li>
+                </ul>
+            <p class="desc">
+                            Essas marcações são de extrema importância para o jogo, 
+                            pois além de fornecerem uma posição precisa para cada peça,
+                            são fundamentais para a <strong>notação do jogo</strong>.
+            </p>
+            <p class="desc2">
+                            Quanto as peças, preenchemos a segunda fileira com peões e logo abaixo, na primeira fileira,
+                            colocamos as duas torres em ambas as extremidades, seguindo as são colocados os cavalos e ao
+                            lado deles os bispos, quanto ao Rei e a Rainha ambos ocupam as casas de suas respectivas cores.
+            </p>
+            <h2>Abaixo segue um exemplo de como Se organizar o Tabuleiro:</h2>
+            
+            <img src="assets/img/chessBuddies.gif" alt="ChessBuddies" class="chessBuddies">
+    
+            <!-- Chessboard -->
+    
+            <div class="chessboard">
+                <!-- 1st column-->
+                <div class="wTile nTile8 lTileA"></div>
+                <div class="bTile lTileB"></div>
+                <div class="wTile lTileC"></div>
+                <div class="bTile lTileD"></div>
+                <div class="wTile lTileE"></div>
+                <div class="bTile lTileF"></div>
+                <div class="wTile lTileG"></div>
+                <div class="bTile lTileH"></div>
+                <!-- 2nd column-->
+                <div class="bTile nTile7"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <!-- 3rd column-->
+                <div class="wTile nTile6"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <!-- 4th column-->
+                <div class="bTile nTile5"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <!-- 5th column-->
+                <div class="wTile nTile4"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <!-- 6th column-->
+                <div class="bTile nTile3"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <!-- 7th column-->
+                <div class="wTile nTile2"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <!-- 8th column-->
+                <div class="bTile nTile1"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                <div class="bTile"></div>
+                <div class="wTile"></div>
+                
+            </div>
+    
+            <!-- Chessboard End -->
+    
+        </section>
+        <!-- Section 2 -Movimento das Peças- -->
+        <section class="section2">
+    
+            <h1 class="title">2. O Movimento das Peças</h1>
+            <h3 class="subtitle">
+                Agora que você já sabe como organizar o tabuleiro, vamos aprender como as peças se movem.
+            </h3>
+            <p class="desc3">Utilize-se do Menu abaixo para Aprender sobre o movimento das peças:</p>
+        <div class="piecesMov">
+                <nav>
+                    <button class="pawn">Peão</button>
+                    <button class="tower">Torre</button>
+                    <button class="knight">Cavalo</button>
+                    <button class="bishop">Bispo</button>
+                    <button class="queen">Rainha</button>
+                    <button class="king">Rei</button>
+                </nav>
+                <div class="chessboard">
+                    <!-- 1st column-->
+                    <div class="wTile nTile8 lTileA"></div>
+                    <div class="bTile lTileB"></div>
+                    <div class="wTile lTileC"></div>
+                    <div class="bTile lTileD"></div>
+                    <div class="wTile lTileE"></div>
+                    <div class="bTile lTileF"></div>
+                    <div class="wTile lTileG"></div>
+                    <div class="bTile lTileH"></div>
+                    <!-- 2nd column-->
+                    <div class="bTile nTile7"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <!-- 3rd column-->
+                    <div class="wTile nTile6"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <!-- 4th column-->
+                    <div class="bTile nTile5"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <!-- 5th column-->
+                    <div class="wTile nTile4"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <!-- 6th column-->
+                    <div class="bTile nTile3"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <!-- 7th column-->
+                    <div class="wTile nTile2"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <!-- 8th column-->
+                    <div class="bTile nTile1"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    <div class="bTile"></div>
+                    <div class="wTile"></div>
+                    
+                </div>
+            <!-- Desc Section -->
+            <div class="pawnDesc">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cupiditate ipsam adipisci consequatur, autem libero voluptatum eveniet aut, alias consectetur inventore, delectus neque accusantium deserunt minima sit! Aspernatur, eligendi temporibus tempore sint beatae exercitationem animi voluptatum error laudantium suscipit officiis?
+            </div>
+            <div class="towerDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quasi, minima obcaecati, optio repellat nesciunt ullam libero fuga modi sint odio possimus sapiente excepturi quos aspernatur similique ducimus, dolor quis tempore accusantium eos voluptate? Incidunt aliquam eius perferendis quam!
+            </div>
+            <div class="knightDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dicta, natus ipsum eligendi aperiam a neque voluptatum, in iure, quos laborum quo cum esse fugit ab quod fuga aliquam ducimus id vero tempora quae? Corporis ad cupiditate ipsam recusandae mollitia! 
+            </div>
+            <div class="bishopDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores culpa recusandae fuga perspiciatis tenetur temporibus quisquam repellat quae saepe perferendis accusantium adipisci est quis dolorum veritatis, dignissimos quam commodi ab! Dolor quisquam accusamus eius laudantium, laborum atque nihil optio.
+            </div>
+            <div class="queenDesc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni minima molestiae earum voluptates sint similique explicabo recusandae illum, ipsum incidunt qui, excepturi quo laudantium dolorem delectus. Dolor officia, accusamus optio itaque minima tempore cum. Pariatur ab enim iusto ad!
+            </div>
+            <div class="kingDesc">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti, in quasi placeat voluptatem, animi a rerum corporis fuga facere maiores reiciendis ipsa. Perferendis, similique a, nobis, expedita nesciunt quia veritatis quos qui officia ab laudantium. Error architecto recusandae neque?
+            </div>
+    
+        </div>
+    
+        </section>
+
+    </div>
+
+</body>
+</html>

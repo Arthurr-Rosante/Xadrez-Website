@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: none;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 50px;
+
+}
+
+/* Estilizando o Cabeçalho */
+
+.pgHeader {
+    
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.pgHeader .title {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 20px auto;
+
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.pgHeader .subtitle {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+
+    line-height: 2.5rem;
+    position: relative;
+}
+
+.pgHeader .subtitle::after {
+    content: "";
+    background-color: #c765ff;
+    border-radius: 20px;
+
+    width: 60vw;
+    height: 6px;
+
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/* Estilizando o Cabeçalho End*/
+
+/* Section 1 */
+.section1 {
+    width: 100%;
+    height: fit-content;
+
+}
+
+.section1 .title {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    
+    margin: 30px auto;
+}
+
+.section1 .desc,
+.section1 .desc2 {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: justify;
+
+    margin: 20px 5vw;
+}
+
+.section1 .descUl {
+
+    width: 100%;
+    padding: 20px 8vw;
+    line-height: 2.5rem;
+
+    position: relative;
+}
+.section1 .descUl li {
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    
+}
+
+.section1 .descUl li strong {
+    cursor: pointer;
+    transition: all 150ms linear;
+}
+
+.section1 .descUl li span {
+    opacity: 0;
+}
+
+.section1 .descUl li strong:hover + span {
+    opacity: 1;
+}
+
+.chessBuddies {
+    position: absolute;
+    
+    top: 40%;
+    right: 15%;
+
+    width: 350px;
+    height: 350px;
+
+    z-index: -1;
+}
+
+
+/* Section 1 End */
+
+
+/* Estilizando o Tabuleiro*/
+
+.chessboard {
+    width: 400px;
+    height: 400px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.wTile {
+    background-color: silver;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.bTile {
+    background-color: #00000080;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/* Estilizando o Tabuleiro End*/
+
+
+/* Adicionando os Números com After */
+
+.nTile1::after {
+    content: "1";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile2::after {
+    content: "2";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile3::after {
+    content: "3";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile4::after {
+    content: "4";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile5::after {
+    content: "5";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile6::after {
+    content: "6";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile7::after {
+    content: "7";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nTile8::after {
+    content: "8";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Adicionando os Números com After End */
+
+/* Adicionando as Letras com After */
+
+.lTileA::before {
+    content: "A";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileB::after {
+    content: "B";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileC::after {
+    content: "C";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileD::after {
+    content: "D";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileE::after {
+    content: "E";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileF::after {
+    content: "F";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileG::after {
+    content: "G";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lTileH::after {
+    content: "H";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Adicionando as Letras com After End*/
