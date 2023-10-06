@@ -211,43 +211,101 @@ section:nth-of-type(7){
     gap: 50px;
     text-align: center;
     position: relative;
-    top: 15%;
+    top: 9.5%;
+    height: 50%;
+}
+.icone1{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.icone2{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.icone3{
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.icone1:hover{
+    font-size: 115%;
+}
+.icone2:hover{
+    font-size: 115%;
+}
+.icone3:hover{
+    font-size: 115%;
 }
 .icone1::after{
-    content: "";
-    width: 7%;
-    height: 0%;
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    content: "HISTÓRIA";
+    font-size: 30%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: absolute;
-    left: 10px;
-    transition: 0.3s ease-in-out;
+    top: 16.5%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgb(163, 163, 163);
+    border-radius: 10px;
+    padding: 1.5%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 10px black;
 }
 .icone1:hover::after{
-    height: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 18.5%;
 }
 .icone2::after{
-    content: " ";
-    width: 7%;
-    height: 0%;
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    content: "RANKING";
+    font-size: 30%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: absolute;
-    left: 10px;
-    transition: 0.3s ease-in-out;
+    top: 48%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgb(163, 163, 163);
+    border-radius: 10px;
+    padding: 1.5%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 10px black;
 }
 .icone2:hover::after{
-    height: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 49.5%;
 }
 .icone3::after{
-    content: " ";
-    width: 7%;
-    height: 0%;
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    content: "VÍDEOS";
+    font-size: 30%;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: absolute;
-    left: 10px;
-    transition: 0.3s ease-in-out;
+    top: 81%;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color: rgb(163, 163, 163);
+    border-radius: 10px;
+    padding: 1.5%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 10px black;
 }
 .icone3:hover::after{
-    height: 20%;
+    opacity: 1;
+    position: absolute;
+    top: 81%;
 }
 .botao-aprender:hover{
     background-color: rgb(211, 151, 230);
@@ -292,6 +350,7 @@ section:nth-of-type(7){
     box-shadow: 0 0 20px rgb(163, 163, 163);
     
 }
+
 /*botão claro e escuro*/
 .botao-escuro{
     position: absolute;
@@ -384,7 +443,7 @@ section:nth-of-type(7){
     left: 5%;
     top: 10%;
     background: linear-gradient(90deg, #9B00F5, #c765ff);
-    width: 50%;
+    width: 60%;
     height: 20%;
     border-radius: 10px;
     display: table;
@@ -405,6 +464,7 @@ section:nth-of-type(7){
     display: table-cell;
     vertical-align: middle;
     color: white;
+    font-family: 'Train One', cursive;
 }
 .texto-pag1 span{
     background: linear-gradient(90deg, #9B00F5, #c765ff);
