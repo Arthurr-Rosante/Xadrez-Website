@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/comoJogarStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Mukta:wght@400;700&family=Poppins:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -43,13 +46,51 @@
                             colocamos as duas torres em ambas as extremidades, seguindo as são colocados os cavalos e ao
                             lado deles os bispos, quanto ao Rei e a Rainha ambos ocupam as casas de suas respectivas cores.
             </p>
-            <h2>Abaixo segue um exemplo de como Se organizar o Tabuleiro:</h2>
+            <h2>Abaixo segue um exemplo de como se organizar o Tabuleiro:</h2>
             
-            <img src="assets/img/chessBuddies.gif" alt="ChessBuddies" class="chessBuddies">
+      
     
             <!-- Chessboard -->
     
             <div class="chessboard">
+                <!-- Black Pawns -->
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn"> <!-- oito peões-->
+                <!-- White Pawns -->
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn"> 
+                <!-- Black Pieces -->
+                <img src="assets/img/Btorre.png" class="piece tower1">
+                <img src="assets/img/Btorre.png" class="piece tower2"> <!-- Duas torres -->
+                <img src="assets/img/Bcavalo.png" class="piece knight1">
+                <img src="assets/img/Bcavalo.png" class="piece knight2"> <!-- Dois Cavalos -->
+                <img src="assets/img/Bbispo.png" class="piece bishop1"> 
+                <img src="assets/img/Bbispo.png" class="piece bishop2"> <!-- Dois Bispos -->
+                <img src="assets/img/Brainha.png" class="piece queen"> <!-- Uma Rainha -->
+                <img src="assets/img/Brei.png"  class="piece king"> <!-- Um Rei -->
+                <!-- White Pieces -->
+                <img src="assets/img/Wtorre.png" class="piece tower3">
+                <img src="assets/img/Wtorre.png" class="piece tower4"> <!-- Duas torres -->
+                <img src="assets/img/Wcavalo.png" class="piece knight3">
+                <img src="assets/img/Wcavalo.png" class="piece knight4"> <!-- Dois Cavalos -->
+                <img src="assets/img/Wbispo.png" class="piece bishop3"> 
+                <img src="assets/img/Wbispo.png" class="piece bishop4"> <!-- Dois Bispos -->
+                <img src="assets/img/Wrainha.png" class="piece queen2"> <!-- Uma Rainha -->
+                <img src="assets/img/Wrei.png"  class="piece king2"> <!-- Um Rei -->
+
+
                 <!-- 1st column-->
                 <div class="wTile nTile8 lTileA"></div>
                 <div class="bTile lTileB"></div>
@@ -138,14 +179,54 @@
             <p class="desc3">Utilize-se do Menu abaixo para Aprender sobre o movimento das peças:</p>
         <div class="piecesMov">
                 <nav>
-                    <button class="pawn">Peão</button>
-                    <button class="tower">Torre</button>
-                    <button class="knight">Cavalo</button>
-                    <button class="bishop">Bispo</button>
-                    <button class="queen">Rainha</button>
-                    <button class="king">Rei</button>
+                    <div class="navContainer">
+                        <button class="btn b-pawn" id="b1">Peão</button>
+                        <button class="btn b-tower" id="b2">Torre</button>
+                        <button class="btn b-knight" id="b3">Cavalo</button>
+                        <button class="btn b-bishop" id="b4">Bispo</button>
+                        <button class="btn b-queen" id="b5">Rainha</button>
+                        <button class="btn b-king" id="b6">Rei</button>
+                    </div>
                 </nav>
                 <div class="chessboard">
+
+                    <!-- Black Pawns -->
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn">
+                <img src="assets/img/Bpeao.png" class="piece pawn"> 
+                <!-- White Pawns -->
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn" id="pawn">      <!--pawnMove-->
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn">
+                <img src="assets/img/Wpawn.png" class="piece pawn"> 
+                <!-- Black Pieces -->
+                <img src="assets/img/Btorre.png" class="piece tower1">
+                <img src="assets/img/Btorre.png" class="piece tower2"> 
+                <img src="assets/img/Bcavalo.png" class="piece knight1">
+                <img src="assets/img/Bcavalo.png" class="piece knight2"> 
+                <img src="assets/img/Bbispo.png" class="piece bishop1"> 
+                <img src="assets/img/Bbispo.png" class="piece bishop2" id="bishop">    <!--BishopMove-->
+                <img src="assets/img/Brainha.png" class="piece queen" id="queen">     <!--queenMove-->
+                <img src="assets/img/Brei.png"  class="piece king"> 
+                <!-- White Pieces -->
+                <img src="assets/img/Wtorre.png" class="piece tower3" id="tower">    <!--TowerMove-->
+                <img src="assets/img/Wtorre.png" class="piece tower4"> 
+                <img src="assets/img/Wcavalo.png" class="piece knight3">                       
+                <img src="assets/img/Wcavalo.png" class="piece knight4" id="knight">  <!--KnightMove-->
+                <img src="assets/img/Wbispo.png" class="piece bishop3"> 
+                <img src="assets/img/Wbispo.png" class="piece bishop4"> 
+                <img src="assets/img/Wrainha.png" class="piece queen2"> 
+                <img src="assets/img/Wrei.png"  class="piece king2" id="king">      <!--kingMove-->
+
                     <!-- 1st column-->
                     <div class="wTile nTile8 lTileA"></div>
                     <div class="bTile lTileB"></div>
@@ -221,23 +302,44 @@
                     
                 </div>
             <!-- Desc Section -->
-            <div class="pawnDesc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus cupiditate ipsam adipisci consequatur, autem libero voluptatum eveniet aut, alias consectetur inventore, delectus neque accusantium deserunt minima sit! Aspernatur, eligendi temporibus tempore sint beatae exercitationem animi voluptatum error laudantium suscipit officiis?
+
+            <div class="Pdesc" id="pawnDesc">
+                <h1>O Peão</h1>
+                    <p>Um peão só pode avançar uma casa por vez. Se for o primeiro movimento do peão, ele poderá avançar uma ou duas casas.
+                        O peão ataca ou captura uma casa a frente e na diagonal em cada direção.
+                    </p>
             </div>
-            <div class="towerDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia quasi, minima obcaecati, optio repellat nesciunt ullam libero fuga modi sint odio possimus sapiente excepturi quos aspernatur similique ducimus, dolor quis tempore accusantium eos voluptate? Incidunt aliquam eius perferendis quam!
+            <div class="Pdesc" id="towerDesc">
+                <h1>A Torre</h1>
+                    <p>A torre pode mover para frente, para trás ou para os lados, mas não pode se mover na diagonal (como a dama ou o bispo). 
+                        A torre pode mover-se para cima ou para baixo na vertical em qualquer coluna.
+                    </p>
             </div>
-            <div class="knightDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dicta, natus ipsum eligendi aperiam a neque voluptatum, in iure, quos laborum quo cum esse fugit ab quod fuga aliquam ducimus id vero tempora quae? Corporis ad cupiditate ipsam recusandae mollitia! 
+            <div class="Pdesc" id="knightDesc">
+                <h1>O Cavalo</h1>
+                    <p>O cavalo move várias casas a cada lance. Ele se move uma casa para cima ou para baixo na vertical e mais de duas casas 
+                        na horizontal OU duas casas para cima ou para baixo na vertical e mais uma casa na horizontal. Esse lance pode ser lembrado como o formato de um "L", porque parece um "L" maiúsculo.
+                    </p>
             </div>
-            <div class="bishopDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores culpa recusandae fuga perspiciatis tenetur temporibus quisquam repellat quae saepe perferendis accusantium adipisci est quis dolorum veritatis, dignissimos quam commodi ab! Dolor quisquam accusamus eius laudantium, laborum atque nihil optio.
+            <div class="Pdesc" id="bishopDesc">
+                <h1>O Bispo</h1>
+                    <p>O bispo é interessante porque ele nunca se move para frente, para trás ou para os lados. 
+                        Não pode pular sobre outras peças como o cavalo. O bispo se move apenas nas diagonais.
+                    </p>
             </div>
-            <div class="queenDesc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est magni minima molestiae earum voluptates sint similique explicabo recusandae illum, ipsum incidunt qui, excepturi quo laudantium dolorem delectus. Dolor officia, accusamus optio itaque minima tempore cum. Pariatur ab enim iusto ad!
+            <div class="Pdesc" id="queenDesc">
+                <h1>A Rainha</h1>
+                    <p>A dama se move de forma semelhante a várias peças. Pode se mover em qualquer direção como o rei 
+                        (mas a dama não se limita a uma única casa). A dama pode se mover da mesma forma que a torre, 
+                        movendo-se livremente para cima e para baixo em qualquer coluna e para a esquerda e direita em qualquer fileira.
+                        A dama também pode se mover livremente em qualquer diagonal como o bispo.
+                    </p>
             </div>
-            <div class="kingDesc">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem deleniti, in quasi placeat voluptatem, animi a rerum corporis fuga facere maiores reiciendis ipsa. Perferendis, similique a, nobis, expedita nesciunt quia veritatis quos qui officia ab laudantium. Error architecto recusandae neque?
+            <div class="Pdesc" id="kingDesc">
+                <h1>O Rei</h1>
+                    <p>Em comparação com as outras peças, o movimento do rei é limitado, pois ele só pode se mover uma casa, 
+                        mas pelo menos pode ser em qualquer direção.
+                    </p>
             </div>
     
         </div>
@@ -246,5 +348,6 @@
 
     </div>
 
+<script src="assets/js/piecesMov.js"></script>
 </body>
 </html>

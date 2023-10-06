@@ -12,40 +12,6 @@
 </head>
 <body>
         <!-- Formulário Cadastre-se / Login   -->
-        <!--Pág 1-->
-        <section>
-            <div class="pag1">
-                <div class="degrade-pag"></div>
-                <div class="back-titulo">
-                    <h1 class="titulo">
-                        É mais do que um jogo
-                    </h1>
-                </div> 
-                <h1 class="texto-pag1">
-                    Venha Conhecer a história milenar do Xadrez e se engajar com a nossa comunidade no <span>RealChess</span> 
-                </h1>
-            </div>
-        </section>
-        <!-- Fim Pág 1-->
-        <section></section>
-        <section>
-            <div class="pag2">
-                <div class="degrade-pag"></div>
-            </div>
-        </section>
-        <section></section>
-        <section>
-            <div class="pag3">
-                <div class="degrade-pag"></div>
-            </div>
-        </section>
-        <section></section>
-        <section>
-            <div class="pag4">
-                <div class="degrade-pag"></div>
-            </div>
-        </section>
-        <section></section>
 
                 <form method="post" class="frm">
 
@@ -61,7 +27,11 @@
                         <button class="b-Concluir">Entrar</button>
                         <div class="registre-se">
                             <p>Não tem uma conta ainda?</p>
-                            <button class="b-registrar">Registre-se</button>
+                            <button class="b-registrar">
+                                <a href="cadastro.html">
+                                    Cadastrar-se
+                                </a>
+                            </button>
                         </div>
                     </div>
                     <img src="assets/img/chess-pieces.png" alt="" class="logImg">
@@ -75,15 +45,15 @@
     <div class="menu">
         <a href="">
             <button class="botao-aprender">
-                APRENDER
+                <a href="comoJogar.html">APRENDER</a>
             </button>   
         </a>
 
         <button class="botao-inscrever">
-            INSCREVER-SE
+            <a href="cadastro.html">CADASTRE-SE</a>
         </button>
 
-        <button class="botao-entrar">
+        <button class="botaoEntrar" onclick="showHide()">
             ENTRAR
         </button>
         <div class="icones-menu">
@@ -99,21 +69,62 @@
                 <i class='bx bxs-videos icone3'></i>
             </div>
         </div>
-        <!--botão claro e escuro-->
-        <div class="botao-escuro">
+            <!--botão claro e escuro-->
+                <div class="botao-escuro">
 
-            <input type="checkbox" class="b-Check" id="inCheck">
+                    <input type="checkbox" class="b-Check" id="inCheck">
 
-        <label class="switch">
-            <div class="ball"></div>
-            <i class='bx bxs-sun' ></i>
-            <i class='bx bxs-moon'></i>
-        </label>
+                    <label class="switch">
+                        <div class="ball"></div>
+                        <i class='bx bxs-sun' ></i>
+                        <i class='bx bxs-moon'></i>
+                    </label>
 
-   </div>
-   <!--fim botão-->
+                </div>
+            <!--fim botão-->
     </div>
     <!--Fim menu-->
+
+    <!--Pág 1-->
+    <section>
+        <div class="pag1">
+            <div class="degrade-pag"></div>
+            <div class="back-titulo">
+                <h1 class="titulo">
+                    É mais do que um jogo
+                </h1>
+            </div> 
+            <h1 class="texto-pag1">
+                Venha Conhecer a história milenar do Xadrez e se engajar com a nossa comunidade no <span>RealChess</span> 
+            </h1>
+        </div>
+    </section>
+    <!-- Fim Pág 1-->
+    
+    <!-- Seção Parallax -->
+
+    <section></section>
+    <section>
+        <div class="pag2">
+            <div class="degrade-pag"></div>
+        </div>
+    </section>
+    <section></section>
+    <section>
+        <div class="pag3">
+            <div class="degrade-pag"></div>
+        </div>
+    </section>
+    <section></section>
+    <section>
+        <div class="pag4">
+            <div class="degrade-pag"></div>
+        </div>
+    </section>
+    <section></section>
+
+    <!-- Fim Seção Parallax -->
+
 
     <!--Pag2 rank-->
     <p>#1</p>

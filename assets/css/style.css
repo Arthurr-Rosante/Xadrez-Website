@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow-x: hidden; 
 }
+
 ::-webkit-scrollbar{
     width: 0.5vw;
 }
@@ -51,11 +52,15 @@ section:nth-of-type(7){
         margin: 8rem auto;
         padding: 10px;
 
-        position: relative;
+        position: fixed;
+        right: 50%;
+        transform: translateX(50%);
+
         transition: display 350ms linear;
         overflow-y: hidden; 
         display: none;
-        z-index: 2;
+
+        z-index: 3;
     }
    
     .content {
@@ -155,13 +160,17 @@ section:nth-of-type(7){
         font-size: 20px;
         font-weight: bold;
         font-family: "Mukta";
-        color: #9B00F5;
+        
 
         transition: all 150ms linear;
     }
 
-    .b-registrar:hover {
+    .b-registrar a {
         color: #d387ff;
+        text-decoration: none;
+    }
+
+    .b-registrar a:hover {
         text-decoration: underline;
     }
 
@@ -197,13 +206,18 @@ section:nth-of-type(7){
     border-radius: 10px;
     width: 80%;
     height: 8%;
-    font-size: 110%;
-    color: white;   
+    font-size: 110%;  
     cursor: pointer;
     position: relative;
     top: 20%;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.botao-aprender a {
+    color: white; 
+    text-decoration: none;
+}
+
 .icones-menu{
     display: flex;
     flex-direction: column;
@@ -268,12 +282,16 @@ section:nth-of-type(7){
     top: 65%;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+.botao-inscrever a {
+    color: white;
+    text-decoration: none;
+}
 .botao-inscrever:hover{
     background-color:rgb(155, 155, 155);
     border-color: rgb(155, 155, 155);
     box-shadow: 0 0 20px rgb(163, 163, 163);
 }
-.botao-entrar{
+.botaoEntrar{
     background: linear-gradient(90deg, #9B00F5, #c765ff);    border-style: solid;
     border-color: rgb(198, 121, 221);
     border-radius: 10px;
@@ -286,7 +304,7 @@ section:nth-of-type(7){
     top: 66%;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.botao-entrar:hover{
+.botaoEntrar:hover{
     background-color: rgb(211, 151, 230);
     border-color: rgb(211, 151, 230);
     box-shadow: 0 0 20px rgb(163, 163, 163);
