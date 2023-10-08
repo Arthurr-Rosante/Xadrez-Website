@@ -36,6 +36,79 @@
 </head>
 <body>
         <!-- Formulário Cadastre-se / Login   -->
+
+                <form method="post" class="frm">
+
+                    <div class="content">
+                        <div class="optUser">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" id="inUser" placeholder="Usuário" required>
+                        </div>
+                        <div class="optSenha">
+                            <i class='bx bxs-lock' ></i>
+                            <input type="password" id="inSenha" placeholder="Senha" maxlength="12" required>
+                        </div>
+                        <button class="b-Concluir">Entrar</button>
+                        <div class="registre-se">
+                            <p>Não tem uma conta ainda?</p>
+                            <button class="b-registrar">
+                                <a href="cadastro.html">
+                                    Cadastrar-se
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <img src="assets/img/chess-pieces.png" alt="" class="logImg">
+                
+                </form>
+
+        <!-- Formulário Cadastre-se / Login Fim  -->
+        
+
+        <!--Menu-->
+        <div class="menu">
+            <a href="">
+                <button class="botao-aprender">
+                    <a href="comoJogar.html">APRENDER</a>
+                </button>   
+            </a>
+
+            <button class="botao-inscrever">
+                <a href="cadastro.html">CADASTRE-SE</a>
+            </button>
+
+            <button class="botaoEntrar" onclick="showHide()">
+                ENTRAR
+            </button>
+            <div class="icones-menu">
+                <div class="container-icone1">
+                    <i class='bx bxs-book-bookmark icone1'></i>
+                </div>
+
+                <div class="container-icone2">
+                    <i class='bx bxs-trophy icone2'></i>
+                </div>
+
+                <div class="container-icone3">
+                    <i class='bx bxs-videos icone3'></i>
+                </div>
+            </div>
+                <!--botão claro e escuro-->
+                    <div class="botao-escuro">
+
+                        <input type="checkbox" class="b-Check" id="inCheck">
+
+                        <label class="switch">
+                            <div class="ball"></div>
+                            <i class='bx bxs-sun' ></i>
+                            <i class='bx bxs-moon'></i>
+                        </label>
+
+                    </div>
+                <!--fim botão-->
+        </div>
+        <!--Fim menu-->
+
         <!--Pág 1-->
         <section>
             <div class="pag1">
@@ -52,7 +125,12 @@
         </section>
         <!-- Fim Pág 1-->
         <section></section>
-        <section id="pag2">
+        <section id="pag2"></section>
+
+    <!-- Seção Parallax -->
+
+    <section></section>
+        <section>
             <div class="pag2">
                 <div class="degrade-pag"></div>
                 <video src="assets/img/A história do xadrez - Conheça a origem de um dos esportes mais estratégicos do mundo.mp4" class="video" controls></video>
@@ -80,8 +158,7 @@
         </section>
         <section></section>
 
-                <form method="post" class="frm">
-
+    <!-- Fim Seção Parallax -->
                     <div class="content">
                         <div class="optUser">
                             <i class='bx bxs-user'></i>
@@ -153,7 +230,6 @@
    <!--fim botão-->
     </div>
     <!--Fim menu-->
-
     <!--Pag3 rank-->
     <p>#1</p>
   

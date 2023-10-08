@@ -1,30 +1,435 @@
+:root {
+    /* black layout */
+    --chessboard-White-colors: white;
+    --text-color: black;
+}
+
 * {
     padding: 0;
     margin: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-.wrapper {
-    margin: 50px;
-
+body {
+    background-color: black;
 }
+
+/* Estilizando o Tabuleiro*/
+
+.chessboard {
+    width: 400px;
+    height: 400px;
+
+    margin: 50px auto;
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    transform: scale(1.1);
+}
+
+.wTile {
+    background-color: silver;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.bTile {
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+/* Estilizando o Tabuleiro End*/
+
+
+/* Adicionando os Números com After */
+
+.nTile1::after {
+    content: "1";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile2::after {
+    content: "2";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile3::after {
+    content: "3";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile4::after {
+    content: "4";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile5::after {
+    content: "5";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile6::after {
+    content: "6";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile7::after {
+    content: "7";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nTile8::after {
+    content: "8";
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Adicionando os Números com After End */
+
+/* Adicionando as Letras com After */
+
+.lTileA::before {
+    content: "A";
+    position: absolute;
+    top: -75%;  
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileB::after {
+    content: "B";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileC::after {
+    content: "C";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileD::after {
+    content: "D";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileE::after {
+    content: "E";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileF::after {
+    content: "F";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileG::after {
+    content: "G";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+.lTileH::after {
+    content: "H";
+    position: absolute;
+    top: -75%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Adicionando as Letras com After End*/
+
+/* Peças */
+
+.piece {
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    z-index: 2;
+}
+
+/*-------- BLACK PIECES -----------*/
+
+.pawn:nth-of-type(1) {
+    top: 50px;
+    left: 0px;
+}
+.pawn:nth-of-type(2) {
+    top: 50px;
+    left: 50px;
+}
+.pawn:nth-of-type(3) {
+    top: 50px;
+    left: 100px;
+}
+.pawn:nth-of-type(4) {                  /*   <--- Posicionando os Peões   */
+    top: 50px;  
+    left: 150px;
+}
+.pawn:nth-of-type(5) {
+    top: 50px;
+    left: 200px;
+}
+.pawn:nth-of-type(6) {
+    top: 50px;
+    left: 250px;
+}
+.pawn:nth-of-type(7) {
+    top: 50px;
+    left: 300px;
+}
+.pawn:nth-of-type(8) {
+    top: 50px;
+    left: 350px;
+}
+/*-------------------*/
+
+.tower1 {
+    top: 0;
+    left: 0;
+}
+
+.tower2 {
+    top: 0;
+    right: 0;
+}
+
+/*-------------------*/
+
+.knight1 {
+    top: 0;
+    right: 50px;
+}
+
+.knight2 {
+    top: 0;
+    left: 50px;
+}
+
+/*-------------------*/
+
+.bishop1 {
+    top: 0;
+    left: 100px;
+}
+
+.bishop2 {
+    top: 0;
+    right: 100px;
+}
+
+/*-------------------*/
+
+.king {
+    top: 0;
+    right: 150px;
+}
+
+/*-------------------*/
+
+.queen {
+    top: 0;
+    right: 200px;
+}
+
+/*------- WHITE PIECES ------------*/
+
+ .pawn:nth-of-type(9){
+    bottom: 50px;
+    left: 0;
+}
+
+.pawn:nth-of-type(10){
+    bottom: 50px;
+    left: 50px;
+}
+
+.pawn:nth-of-type(11){
+    bottom: 50px;
+    left: 100px;
+}
+
+.pawn:nth-of-type(12){
+    bottom: 50px;
+    left: 150px;
+}
+
+.pawn:nth-of-type(13){
+    bottom: 50px;
+    left: 200px;
+}
+
+.pawn:nth-of-type(14){
+    bottom: 50px;
+    left: 250px;
+}
+
+.pawn:nth-of-type(15){
+    bottom: 50px;
+    left: 300px;
+}
+
+.pawn:nth-of-type(16){
+    bottom: 50px;
+    left: 350px;
+}
+
+/*-------------------*/
+
+.tower3 {
+    bottom: 0;
+    left: 0;
+}
+
+.tower4 {
+    bottom: 0;
+    right: 0;
+}
+
+/*-------------------*/
+
+.knight3 {
+    bottom: 0;
+    right: 50px;
+}
+
+.knight4 {
+    bottom: 0;
+    left: 50px;
+}
+
+/*-------------------*/
+
+.bishop3 {
+    bottom: 0;
+    left: 100px;
+}
+
+.bishop4 {
+    bottom: 0;
+    right: 100px;
+}
+
+/*-------------------*/
+
+.king2 {
+    bottom: 0;
+    right: 150px;
+}
+
+/*-------------------*/
+
+.queen2 {
+    bottom: 0;
+    right: 200px;
+}
+
+/* Peças End*/
+
 
 /* Estilizando o Cabeçalho */
 
 .pgHeader {
-    
-    width: 100%;
-    height: fit-content;
+    background-image: url(/assets/img/bg1P2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-bottom: 2px solid #9B00F5;
+    box-shadow: 0 0 10px #747cfb;
+
+    width: 100vw;
+    height: 90%;
     padding: 10px;
 }
 
 .pgHeader .title {
     font-family: "Mukta", Arial, Helvetica, sans-serif;
-    font-size: 4.5rem;
+    font-size: 8rem;
     font-weight: bold;
     text-align: center;
 
-    margin: 20px auto;
+    margin: 100px auto;
 
     background: linear-gradient(90deg, #9B00F5, #c765ff);
     -webkit-background-clip: text;
@@ -33,9 +438,11 @@
 
 .pgHeader .subtitle {
     font-family: "Mukta", Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-align: center;
+    text-shadow: 0 0 15px black;
+    color: #c765ff;
 
     line-height: 2.5rem;
     position: relative;
@@ -60,15 +467,26 @@
 
 /* Section 1 */
 .section1 {
-    width: 100%;
+    width: 1200px;
     height: fit-content;
 
+    background-color: transparent;
+    margin: 50px auto 20px auto;
+    
+    border: 2px solid #747cfb;
+    border-radius: 40px;
+    box-shadow: 0 0 15px #747cfb;
+    
+    position: relative;
 }
 
 .section1 .title {
+    
     font-family: "Mukta", Arial, Helvetica, sans-serif;
     font-size: 3.5rem;
     font-weight: bold;
+
+    color: #c765ff;
     text-align: center;
     
     margin: 30px auto;
@@ -77,27 +495,40 @@
 .section1 .desc,
 .section1 .desc2 {
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: justify;
-
+    font-size: 25px;
+    
+    color: #c765ff;
+    text-align: center;
+    
     margin: 20px 5vw;
+}
+
+.desc strong {
+    cursor: pointer;
+    color: white;
 }
 
 .section1 .descUl {
 
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    
     padding: 20px 8vw;
     line-height: 2.5rem;
 
     position: relative;
 }
 .section1 .descUl li {
+    width: 500px;
+    
     font-family: "Ubuntu", Arial, Helvetica, sans-serif;
     font-size: 22px;
-    
+    color: #9B00F5;
+    text-align: center;
 }
 
 .section1 .descUl li strong {
+    color: white;
     cursor: pointer;
     transition: all 150ms linear;
 }
@@ -107,173 +538,404 @@
 }
 
 .section1 .descUl li strong:hover + span {
+    color: white;
     opacity: 1;
 }
 
-.chessBuddies {
-    position: absolute;
+.section1 h2 {
+    width: 45%;
+
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
     
-    top: 40%;
-    right: 15%;
-
-    width: 350px;
-    height: 350px;
-
-    z-index: -1;
+    color: #c765ff;
+    text-align: center;
+    
+    margin: 30px auto;
 }
+ 
+
 
 
 /* Section 1 End */
 
+/* Section 2 */
 
-/* Estilizando o Tabuleiro*/
-
-.chessboard {
-    width: 400px;
-    height: 400px;
+.section2 {
+    width: 1200px;
+    height: fit-content;
 
     margin: 0 auto;
+}
+
+.section2 .title {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    
+    text-align: center;
+    color: #c765ff;
+
+    margin: 30px auto;
+}
+
+.section2 .subtitle {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+    color: #c765ff;
+    text-align: center;
+}
+
+.section2 .desc3 {
+    font-family: "Mukta", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    
+    color: #c765ff;
+    text-align: center;
+}
+
+.piecesMov {
 
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-}
+    grid-template-columns: 450px 1fr;
+    grid-template-rows: 1fr 300px;
+    justify-items: end;
+    align-items: center;
 
-.wTile {
-    background-color: silver;
-    width: 50px;
-    height: 50px;
     position: relative;
+    width: calc(fit-content + 20px);
+    overflow: hidden;
+
 }
 
-.bTile {
-    background-color: #00000080;
-    width: 50px;
-    height: 50px;
-    position: relative;
+.piecesMov .navContainer {
+    width: 400px;
+    padding: 10px;
+    height: fit-content;
+    gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
 }
 
-/* Estilizando o Tabuleiro End*/
+.b-pawn, .b-tower, .b-knight,
+.b-bishop, .b-queen, .b-king {
+    
+    width: 250px;
+    align-self: center;
+    
+    border: 1px solid #9B00F5;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #9B00F5, #c765ff);
 
+    padding: 10px;
+    box-shadow: 0 0 10px #747cfb;
+    cursor: pointer;
 
-/* Adicionando os Números com After */
+    color: white;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 
-.nTile1::after {
-    content: "1";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile2::after {
-    content: "2";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile3::after {
-    content: "3";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile4::after {
-    content: "4";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile5::after {
-    content: "5";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile6::after {
-    content: "6";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile7::after {
-    content: "7";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.nTile8::after {
-    content: "8";
-    position: absolute;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
+    text-align: center;
 }
 
-/* Adicionando os Números com After End */
-
-/* Adicionando as Letras com After */
-
-.lTileA::before {
-    content: "A";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
+.b-pawn:hover, .b-tower:hover, .b-knight:hover,
+.b-bishop:hover, .b-queen:hover, .b-king:hover {
+    animation: pop 3.5s ease-in-out infinite;
 }
-.lTileB::after {
-    content: "B";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileC::after {
-    content: "C";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileD::after {
-    content: "D";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileE::after {
-    content: "E";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileF::after {
-    content: "F";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileG::after {
-    content: "G";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-.lTileH::after {
-    content: "H";
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
+@keyframes pop {
+    0% {
+        transform: translateY(-5%);
+        
+    }
+    50% {
+        transform: translateY(5%);
+        
+    }
+    100% {
+        transform: translateY(-5%);
+        
+    }
 }
 
-/* Adicionando as Letras com After End*/
+.Pdesc {
+    color: #c765ff;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: auto 150px;
+
+    position: absolute;
+    top: 0;
+    
+    transition: all 350ms;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;         /* Para mostrar a descrição */
+}
+
+.Pdesc h1 {
+    font-size: 45px;
+
+    background: linear-gradient(90deg, #9B00F5, #747cfb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Pdesc p {
+    font-size: 20px;
+}
+
+
+
+/* Section 2 End*/
+
+
+/* Descrição das Peças */
+
+    /* Peão Desc */
+
+        .pawnMove {
+            animation: pawnMove 5s infinite linear;
+        }
+        @keyframes pawnMove {
+            0% {
+                bottom: 50px;
+                left: 200px;
+            }
+            20% {
+                bottom: 150px;
+                left: 200px;
+            }
+            30% {
+                bottom: 50px;
+                left: 200px;
+            }
+            40% {
+                bottom: 50px;
+                left: 200px;
+            }
+            50% {
+                bottom: 100px;
+                left: 200px;    
+            }
+            60% {
+                bottom: 150px;
+                left: 150px;
+            }
+            70% {
+                bottom: 100px;
+                left: 200px;
+            }
+            80% {
+                bottom: 150px;
+                left: 250px;
+            }
+            90% {
+                bottom: 100px;
+                left: 200px;
+            }
+            100% {
+                bottom: 50px;
+            }
+        }
+
+        /*============*/
+
+    /* Tower Desc */
+
+        .towerMove {
+            animation: towerMove 5s infinite linear;
+        }
+        @keyframes towerMove {
+            0% {
+                bottom: 0;
+                left: 0;
+            }
+            20% {
+                bottom: 150px;
+                left: 0;
+            }
+            40% {
+                bottom: 150px;
+                left: 350px;
+            }
+            60% {
+                bottom: 150px;
+                left: 0;
+            }
+            100% {
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+        /*============*/
+
+    /* Knight Desc */
+        .knightMove {
+            animation: knightMove 2s infinite linear;
+        }
+        @keyframes knightMove {
+            0% {
+                bottom: 0;
+                left: 50px;
+            }
+            25% {
+                bottom: 50px;
+                left: 50px;
+            }
+            50% {
+               bottom: 100px;
+               left: 50px
+            }
+            75% {
+                bottom: 100px;
+                left: 100px;
+            }
+        }
+
+        /*============*/
+
+    /* bishop Desc */
+
+        .bishopMove {
+            animation: bishopMove 3s infinite linear;
+        }
+        @keyframes bishopMove {
+            0% {
+                top: 0;
+                right: 100px;
+            }
+            25% {
+                top: 150px;
+                right: 250px;
+            }
+            50% {
+                top: 150px;
+                right: 250px;
+            }
+            75% {
+                top: 250px;
+                right: 150px;
+            }
+            90% {
+                top: 150px;
+                right: 250px;
+            }
+            100% {
+                top: 0;
+                right: 100px;
+            }
+        }
+
+        /*============*/
+
+    /* queen Desc */
+
+        .queenMove {
+            animation: queenMove 5s infinite linear;
+        }
+        @keyframes queenMove {
+            0% {
+                top: 0;
+                right: 200px;
+            }
+            20% {
+                top: 200px;
+                right: 200px;
+            }
+            
+            30% {
+                top: 200px;
+                right: 350px;
+            }
+            40% {
+                top: 200px;
+                right: 0px;
+            }
+            50% {
+                top: 200px;
+                right: 200px;
+            }
+            60% {
+                top: 350px;
+                right: 350px;
+            }
+            70% {
+                top: 0;
+                right: 0;
+            }
+            80% {
+               top: 200px;
+               right: 200px; 
+            }
+            100% {
+                top: 0;
+                right: 200px;
+            }
+        }
+
+        /*============*/
+
+    /* queen Desc */
+        
+    .kingMove {
+        animation: kingMove 5s infinite linear;
+    }
+    @keyframes kingMove {
+        0% {
+            bottom: 150px;
+            right: 200px;
+        }
+        10% {
+            bottom: 200px;
+            right: 200px;
+        }
+        20% {
+            bottom: 150px;
+            right: 200px;
+        }
+        30% {
+            bottom: 150px;
+            right: 150px;
+        }
+        40% {
+            bottom: 150px;
+            right: 200px;
+        }
+        50% {
+            bottom: 100px;
+            right: 250px;
+        }
+        60% {
+            bottom: 150px;
+            right: 200px;
+        }
+        70% {
+            bottom: 100px;
+            right: 200px;
+        }
+        80% {
+            bottom: 150px;
+            right: 200px;
+        }
+        90% {
+            bottom: 150px;
+            right: 200px;
+        }
+        100% {
+            bottom: 0;
+            right: 150px;
+        }
+    }
+/* Descrição das Peças Fim */
