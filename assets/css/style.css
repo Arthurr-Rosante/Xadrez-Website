@@ -4,6 +4,12 @@
     box-sizing: border-box;
     overflow-x: hidden; 
 }
+body{
+    background-color: #000000;
+}
+html{
+    scroll-behavior: smooth;
+}
 ::-webkit-scrollbar{
     width: 0.5vw;
 }
@@ -11,6 +17,9 @@
     background-color: rgb(130, 130, 130);
     border-radius: 10px;
 
+}
+a{
+    color: black;
 }
 section{
     width: 100%;
@@ -26,17 +35,29 @@ section:nth-of-type(1){
     background-image: url(../img/bg1.jpg);
     height: 90vh;
 }
+section:nth-of-type(2){
+    background-color: white;
+}
 section:nth-of-type(3){
     background-image: url(../img/bg2.jpg);
     height: 90vh;
+}
+section:nth-of-type(4){
+    background-color: white;
 }
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
     height: 90vh ;
 }
+section:nth-of-type(6){
+    background-color: white;
+}
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
     height: 90vh ;
+}
+section:nth-of-type(8){
+    background-color: white;
 }
 
 /* Formulario Style */
@@ -203,6 +224,8 @@ section:nth-of-type(7){
     position: relative;
     top: 20%;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font-family: 'Work Sans', sans-serif;
+
 }
 .icones-menu{
     display: flex;
@@ -457,6 +480,7 @@ section:nth-of-type(7){
     top: 65%;
     left: 7%;
     max-width: 70%;
+    font-family: 'AR One Sans', sans-serif;
 }
 .titulo{
     font-size: 500%;
@@ -472,9 +496,40 @@ section:nth-of-type(7){
     -webkit-text-fill-color: transparent;
 }
 
+/*pag 2*/
+.video{
+    position: absolute;
+    left: 5%;
+    top: 24%;
+    width: 40%;
+    z-index: 3;
+    border-radius: 10px;
+    border-style: solid;
+}
+.texto-pag2{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    max-width: 45%;
+    z-index: 3;
+}
+.historia-titulo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 400%;
+    z-index: 3;
+}
+.historia-texto{
+    font-family: 'AR One Sans', sans-serif;
+    font-size: 200%;
+    z-index: 3;
+}
+
+/*fim pag 2*/
 
 
-/*pagina2 rank*/
+
+/*pagina3 rank*/
 
 .pag2{
     width: 90vw;
