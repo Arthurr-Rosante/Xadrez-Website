@@ -410,7 +410,7 @@ section:nth-of-type(8){
     background: linear-gradient(90deg, #9B00F5, #c765ff);    border-style: solid;
     border-color: rgb(198, 121, 221);
 }
-.botaoEntrar{
+.botao-entrar{
     background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));    border-style: solid;
     border-color: var(--border-color);
 
