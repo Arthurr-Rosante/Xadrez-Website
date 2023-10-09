@@ -27,14 +27,13 @@
     margin: 0;
     box-sizing: border-box;
     transition: all 250ms linear;
+    overflow-X: hidden;
 }
 
 body {
     background-color: var(--body-background-color);
 }
-body{
-    background-color: #000000;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -64,14 +63,14 @@ section:nth-of-type(1){
     height: 90vh;
 }
 section:nth-of-type(2){
-    background-color: white;
+    background-color: var(--background-color);
 }
 section:nth-of-type(3){
     background-image: url(../img/bg2.jpg);
     height: 90vh;
 }
 section:nth-of-type(4){
-    background-color: white;
+    background-color: var(--background-color);
 }
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
@@ -79,7 +78,7 @@ section:nth-of-type(5){
 
 }
 section:nth-of-type(6){
-    background-color: white;
+    background-color: var(--background-color);
 }
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
@@ -87,7 +86,7 @@ section:nth-of-type(7){
 
 }
 section:nth-of-type(8){
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 
