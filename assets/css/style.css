@@ -281,16 +281,19 @@ section:nth-of-type(8){
     position: relative;
     top: 9.5%;
     height: 50%;
-    color: var(--icon-color);
+
 }
 .icone1{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: var(--icon-color);
 }
 .icone2{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: var(--icon-color);
 }
 .icone3{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    color: var(--icon-color);
 }
 .icone1:hover{
     font-size: 115%;
@@ -381,28 +384,29 @@ section:nth-of-type(8){
     border-color: #d397e6;
     box-shadow: 0 0 20px #a3a3a3;
 }
-.botao-inscrever{
-    background-color: #828282;
-    border-style: solid;
-    border-color: #828282;
-    border-radius: 10px;
+.botao-inscrever {
+    background: #a3a3a3;
+    padding: 10px;
     width: 80%;
     height: 5%;
-    font-size: 110%;
-    color: white;   
+
+    border-radius: 10px;
+    border: none;
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
     cursor: pointer;
     position: relative;
-    top: 65%;
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    top: 64%;
+
+    z-index: 10;
 }
 .botao-inscrever a {
-    color: white;
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
-.botao-inscrever:hover{
-    background-color:rgb(155, 155, 155);
-    border-color: rgb(155, 155, 155);
-    box-shadow: 0 0 20px rgb(163, 163, 163);
+.botao-inscrever:hover {
+  box-shadow: 0 0 10px;
 }
 
 .botao-entrar{
@@ -410,19 +414,20 @@ section:nth-of-type(8){
     border-color: rgb(198, 121, 221);
 }
 .botao-entrar{
-    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));    border-style: solid;
+    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));    
+    border-style: solid;
     border-color: var(--border-color);
 
     border-radius: 10px;
     width: 80%;
     height: 5%;
-    font-size: 110%;
+    font-size: 20px;
     color: white;   
     cursor: pointer;
     position: relative;
     top: 66%;
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+} 
 .botao-entrar:hover{
     background-color: rgb(211, 151, 230);
     border-color: rgb(211, 151, 230);
@@ -503,13 +508,10 @@ section:nth-of-type(8){
 }
 .degrade-pag{
     background: linear-gradient(to bottom, #ffffff00,#000000);
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
-    left: 1.7%;
-    z-index: 2;
-    opacity: 100%;
-    z-index: 1;
+    
 }
 .background-pag1{
     width: 100%;
@@ -1262,5 +1264,8 @@ border-style: solid;
     cursor: pointer;
     top: 170px;  
   }
+
+
+
 
 
