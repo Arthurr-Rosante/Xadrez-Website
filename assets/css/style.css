@@ -1,8 +1,36 @@
+:root {
+    --background-color: #d9d9d9;
+    --body-background-color: white;
+    --icon-color: black;
+    --degrade-color1: #9B00F5;
+    --degrade-color2: #c765ff;
+    --box-shadow: black;
+    --border-color: #c679dd;
+    --button-shadow1: black;
+    --button-shadow2: #c765ff;
+}
+
+.dark:root {
+    --background-color: #332F52;
+    --body-background-color: #180D33;
+    --icon-color: #17F5F3;
+    --degrade-color1: #00d7eb;
+    --degrade-color2: #00B9EA;
+    --box-shadow: #511475;
+    --border-color: #00eaff;
+    --button-shadow1: #00f2ff;
+    --button-shadow2: #0048ff;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden; 
+    transition: all 250ms linear;
+}
+
+body {
+    background-color: var(--body-background-color);
 }
 
 ::-webkit-scrollbar{
@@ -34,11 +62,14 @@ section:nth-of-type(3){
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
     height: 90vh ;
+
 }
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
     height: 90vh ;
+
 }
+
 
 /* Formulario Style */
 
@@ -188,21 +219,21 @@ section:nth-of-type(7){
 
 /*menu fixo*/
 .menu{
-    background-color: rgb(217, 217, 217);
+    background-color: var(--background-color);
     width: 15vw;
     height: 101vh;
     position: fixed;
     top: -2vh;
     left: -1vw;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 20px var(--box-shadow);
     border-radius: 25px;
     text-align: center;
     z-index: 2;
 }
 .botao-aprender{
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     border-style: solid;
-    border-color: rgb(198, 121, 221);
+    border-color: var(--border-color);
     border-radius: 10px;
     width: 80%;
     height: 8%;
@@ -227,6 +258,7 @@ section:nth-of-type(7){
     position: relative;
     top: 9.5%;
     height: 50%;
+    color: var(--icon-color);
 }
 .icone1{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -257,7 +289,7 @@ section:nth-of-type(7){
     top: 16.5%;
     left: 50%;
     transform: translatex(-50%);
-    background-color: rgb(163, 163, 163);
+    background-color: #a3a3a3;
     border-radius: 10px;
     padding: 1.5%;
     text-align: center;
@@ -322,14 +354,14 @@ section:nth-of-type(7){
     top: 81%;
 }
 .botao-aprender:hover{
-    background-color: rgb(211, 151, 230);
-    border-color: rgb(211, 151, 230);
-    box-shadow: 0 0 20px rgb(163, 163, 163);
+    background-color: #d397e6;
+    border-color: #d397e6;
+    box-shadow: 0 0 20px #a3a3a3;
 }
 .botao-inscrever{
-    background-color: rgb(130, 130, 130);
+    background-color: #828282;
     border-style: solid;
-    border-color: rgb(130, 130, 130);
+    border-color: #828282;
     border-radius: 10px;
     width: 80%;
     height: 5%;
@@ -350,8 +382,8 @@ section:nth-of-type(7){
     box-shadow: 0 0 20px rgb(163, 163, 163);
 }
 .botaoEntrar{
-    background: linear-gradient(90deg, #9B00F5, #c765ff);    border-style: solid;
-    border-color: rgb(198, 121, 221);
+    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));    border-style: solid;
+    border-color: var(--border-color);
     border-radius: 10px;
     width: 80%;
     height: 5%;
@@ -460,7 +492,7 @@ section:nth-of-type(7){
     position: relative;
     left: 5%;
     top: 10%;
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     width: 60%;
     height: 20%;
     border-radius: 10px;
@@ -485,7 +517,7 @@ section:nth-of-type(7){
     font-family: 'Train One', cursive;
 }
 .texto-pag1 span{
-    background: linear-gradient(90deg, #9B00F5, #c765ff);
+    background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
