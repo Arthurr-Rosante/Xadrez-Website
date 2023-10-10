@@ -65,22 +65,14 @@ section:nth-of-type(1){
     height: 90vh;
 }
 section:nth-of-type(2){
-<<<<<<< Updated upstream
-    background-color: var(--background-color);
-=======
     background-color: var(--section-color);
->>>>>>> Stashed changes
 }
 section:nth-of-type(3){
     background-image: url(../img/bg2.jpg);
     height: 90vh;
 }
 section:nth-of-type(4){
-<<<<<<< Updated upstream
-    background-color: var(--background-color);
-=======
     background-color: var(--section-color);
->>>>>>> Stashed changes
 }
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
@@ -88,11 +80,7 @@ section:nth-of-type(5){
 
 }
 section:nth-of-type(6){
-<<<<<<< Updated upstream
-    background-color: var(--background-color);
-=======
     background-color: var(--section-color);
->>>>>>> Stashed changes
 }
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
@@ -100,11 +88,7 @@ section:nth-of-type(7){
 
 }
 section:nth-of-type(8){
-<<<<<<< Updated upstream
-    background-color: var(--background-color);
-=======
     background-color: var(--section-color);
->>>>>>> Stashed changes
 }
 
 
@@ -517,7 +501,7 @@ section:nth-of-type(8){
 /*página 1*/
 
 .pag1{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -529,15 +513,11 @@ section:nth-of-type(8){
     width: 100vw;
     height: 100%;
     position: absolute;
-<<<<<<< Updated upstream
-    
-=======
     left: 1.7%;
     right: 0%;
     z-index: 2;
     opacity: 100%;
     z-index: 1;
->>>>>>> Stashed changes
 }
 .background-pag1{
     width: 100%;
@@ -617,7 +597,7 @@ section:nth-of-type(8){
 /*pagina3 rank*/
 
 .pag2{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -634,7 +614,7 @@ border-style: solid;
     width: 700px;
 }
 .pag3{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -642,7 +622,7 @@ border-style: solid;
     z-index: 1;
 }
 .pag4{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
