@@ -8,18 +8,20 @@
     --border-color: #c679dd;
     --button-shadow1: black;
     --button-shadow2: #c765ff;
+    --section-color: #FFFF;
 }
 
 .dark:root {
-    --background-color: #332F52;
-    --body-background-color: #180D33;
-    --icon-color: #17F5F3;
+    --background-color: #1f1c18;
+    --body-background-color: #4e4334;
+    --icon-color: #dfdfdf;
     --degrade-color1: #00d7eb;
     --degrade-color2: #00B9EA;
-    --box-shadow: #511475;
+    --box-shadow: #ffffff;
     --border-color: #00eaff;
     --button-shadow1: #00f2ff;
     --button-shadow2: #0048ff;
+    --section-color: rgb(43, 33, 27);
 }
 
 * {
@@ -63,14 +65,14 @@ section:nth-of-type(1){
     height: 90vh;
 }
 section:nth-of-type(2){
-    background-color: var(--background-color);
+    background-color: var(--section-color);
 }
 section:nth-of-type(3){
     background-image: url(../img/bg2.jpg);
     height: 90vh;
 }
 section:nth-of-type(4){
-    background-color: var(--background-color);
+    background-color: var(--section-color);
 }
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
@@ -78,7 +80,7 @@ section:nth-of-type(5){
 
 }
 section:nth-of-type(6){
-    background-color: var(--background-color);
+    background-color: var(--section-color);
 }
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
@@ -86,7 +88,7 @@ section:nth-of-type(7){
 
 }
 section:nth-of-type(8){
-    background-color: var(--background-color);
+    background-color: var(--section-color);
 }
 
 
@@ -499,7 +501,7 @@ section:nth-of-type(8){
 /*página 1*/
 
 .pag1{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -511,7 +513,11 @@ section:nth-of-type(8){
     width: 100vw;
     height: 100%;
     position: absolute;
-    
+    left: 1.7%;
+    right: 0%;
+    z-index: 2;
+    opacity: 100%;
+    z-index: 1;
 }
 .background-pag1{
     width: 100%;
@@ -591,7 +597,7 @@ section:nth-of-type(8){
 /*pagina3 rank*/
 
 .pag2{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -608,7 +614,7 @@ border-style: solid;
     width: 700px;
 }
 .pag3{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
@@ -616,7 +622,7 @@ border-style: solid;
     z-index: 1;
 }
 .pag4{
-    width: 90vw;
+    width: 100vw;
     height: 85vh;
     position: absolute;
     left: 8vw;
