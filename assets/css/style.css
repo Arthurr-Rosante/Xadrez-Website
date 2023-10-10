@@ -8,18 +8,20 @@
     --border-color: #c679dd;
     --button-shadow1: black;
     --button-shadow2: #c765ff;
+    --section-color: #FFFF;
 }
 
 .dark:root {
-    --background-color: #332F52;
-    --body-background-color: #180D33;
-    --icon-color: #17F5F3;
+    --background-color: #1f1c18;
+    --body-background-color: #4e4334;
+    --icon-color: #dfdfdf;
     --degrade-color1: #00d7eb;
     --degrade-color2: #00B9EA;
-    --box-shadow: #511475;
+    --box-shadow: #ffffff;
     --border-color: #00eaff;
     --button-shadow1: #00f2ff;
     --button-shadow2: #0048ff;
+    --section-color: rgb(43, 33, 27);
 }
 
 * {
@@ -63,14 +65,22 @@ section:nth-of-type(1){
     height: 90vh;
 }
 section:nth-of-type(2){
+<<<<<<< Updated upstream
     background-color: var(--background-color);
+=======
+    background-color: var(--section-color);
+>>>>>>> Stashed changes
 }
 section:nth-of-type(3){
     background-image: url(../img/bg2.jpg);
     height: 90vh;
 }
 section:nth-of-type(4){
+<<<<<<< Updated upstream
     background-color: var(--background-color);
+=======
+    background-color: var(--section-color);
+>>>>>>> Stashed changes
 }
 section:nth-of-type(5){
     background-image: url(../img/BG3.jpg);
@@ -78,7 +88,11 @@ section:nth-of-type(5){
 
 }
 section:nth-of-type(6){
+<<<<<<< Updated upstream
     background-color: var(--background-color);
+=======
+    background-color: var(--section-color);
+>>>>>>> Stashed changes
 }
 section:nth-of-type(7){
     background-image: url(../img/bg4.jpg);
@@ -86,7 +100,11 @@ section:nth-of-type(7){
 
 }
 section:nth-of-type(8){
+<<<<<<< Updated upstream
     background-color: var(--background-color);
+=======
+    background-color: var(--section-color);
+>>>>>>> Stashed changes
 }
 
 
@@ -511,7 +529,15 @@ section:nth-of-type(8){
     width: 100vw;
     height: 100%;
     position: absolute;
+<<<<<<< Updated upstream
     
+=======
+    left: 1.7%;
+    right: 0%;
+    z-index: 2;
+    opacity: 100%;
+    z-index: 1;
+>>>>>>> Stashed changes
 }
 .background-pag1{
     width: 100%;
