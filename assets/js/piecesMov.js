@@ -7,6 +7,8 @@ const btnBishop = document.querySelector(".b-bishop");
 const btnQueen = document.querySelector(".b-queen");
 const btnKing = document.querySelector(".b-king");
 
+*/
+
 //Peças
 
 const pawn = document.getElementById("pawn");
@@ -25,6 +27,8 @@ const kingDesc = document.getElementById("kingDesc");
 
 
 //functions
+
+/*
 
 //PawnFunc
 btnPawn.addEventListener("click", () => {
@@ -99,6 +103,7 @@ btnKing.addEventListener("click", () => {
 
 */
 
+/*
 //Function Prevent Multiple Buttons
 
 
@@ -214,3 +219,12 @@ b_king.addEventListener("click", function() {
 });
 
 deactivateAll();
+*/
+
+const bList = document.querySelectorAll(".btn");
+
+function disableAllButtons() {
+    bList.forEach(button) = {
+        
+    }
+}
