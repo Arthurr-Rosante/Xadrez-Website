@@ -103,7 +103,7 @@ btnKing.addEventListener("click", () => {
 
 */
 
-/*
+
 //Function Prevent Multiple Buttons
 
 
@@ -219,12 +219,4 @@ b_king.addEventListener("click", function() {
 });
 
 deactivateAll();
-*/
 
-const bList = document.querySelectorAll(".btn");
-
-function disableAllButtons() {
-    bList.forEach(button) = {
-        
-    }
-}
