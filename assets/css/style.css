@@ -677,647 +677,360 @@ border-style: solid;
 }
 
 /*começo do ranking*/
-/*Estilo=escolher modalidade*/
-.estilo{
-      
-    border: 2px;
-    border-style: solid;
-    color: rgb(0, 0, 0);
-    left:35% ;
-    position: absolute;
-    width: 17%;
-    height: 0%;
-    padding-top: 60px;
-    border-radius: 10px 0px 0px 0px;
-    background-color: #ffffff;
-  }
-  
-  .estilo:hover{
-      background-color: gainsboro;
-      cursor: pointer;
-  }
-  
-  .estilo2{
-        
-      border: 2px;
-      border-style: solid;
-      color: rgb(0, 0, 0);
-      left:52% ;
-      position: absolute;
-      width: 17%;
-      height: 0%;
-      padding-top: 60px;
-      background-color: #ffffff;
-     
-    }
-  
-    .estilo2:hover{
-      background-color: gainsboro;
-      cursor: pointer;
-    }
-  
-    .estilo3{
-        
-      border: 2px;
-      border-style: solid;
-      color: rgb(0, 0, 0);
-      left:69% ;
-      position: absolute;
-      width: 17%;
-      height: 0%;
-      padding-top: 60px;
-      border-radius: 0px 10px 0px 0px;
-      background-color: #ffffff;
-    }
-  
-    .estilo3:hover{
-      background-color: gainsboro;
-      cursor: pointer;
-    }
-  
-  .div1{
-    top:206.5vw ; 
-    border: 2px;
-    border-style: solid;
-    color: rgb(0, 0, 0);
-    left:35% ;
-    position: absolute;
-    width: 51%;
-    height: 25%;
-    padding-top: 60px;
-    background-color: #ffffff;
-  
-  }
-  
-  .div2{
-    top:218.5vw ; 
-    border: 2px;
-    border-style: solid;
-    color: rgb(0, 0, 0);
-    left:35% ;
-    position: absolute;
-    width: 51%;
-    height: 817px;
-    border-radius: 0px 0px 10px 10px;
-    background-color: #ffffff;
-  }
-  
-  /* Barrinha cinza que divede o rank 2 ate o 9*/
-  .barrafinal{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:100px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal1{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:200px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal2{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:300px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal3{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:400px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal4{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:500px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal5{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:600px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  .barrafinal6{
-    border-bottom: solid 2px rgb(182, 182, 182);
-    top:700px;
-    position: absolute;
-    width: 50.6vw;
-  }
-  
-  
-  /*Numero de classificação do lado das fotos*/
-  .classificacao {
-    top:40px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao {
-    top:40px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao1 {
-    top:150px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao2 {
-    top:250px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao3 {
-    top:350px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao4 {
-    top:450px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao5 {
-    top:550px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao6 {
-    top:650px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  .classificacao7 {
-    top:750px ;
-    position: absolute;
-    width: 100px;
-    left: 10px;
-    transform: translate(-0%, -50%);
-    font-size: 40px;
-    margin: 16px;
-    color: rgb(141, 141, 141);
-  }
-  
-  /*foto dos jogadores*/
-  .foto1{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 90px;
-    left: 49%;
-    top: 20px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 100px;
-  }
-  
-  .foto2{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 14px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto3{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 115px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto4{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 215px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto5{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 315px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto6{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 415px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto7{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 515px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto8{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 615px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .foto9{
-    position: absolute;
-    transform: translateX(-50%);
-    width: 80px;
-    left: 17%;
-    top: 715px;
-    border: 2px rgb(0, 0, 0) solid;
-    border-radius: 10px;
-  }
-  
-  .nome1{
-   font-size: 20px; 
-   position: absolute;
-   left: 24%;
-   top: 45px;
-  }
-  
-  .nome2{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 142px;
-   }
-  
-   .nome3{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 242px;
-   }
-  
-   .nome4{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 342px;
-   }
-  
-   .nome5{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 442px;
-   }
-  
-   .nome6{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 542px;
-   }
-  
-   .nome7{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 642px;
-   }
-  
-   .nome8{
-    font-size: 20px; 
-    position: absolute;
-    left: 24%;
-    top: 742px;
-   }
-  
-   .bandeira1{
-   width: 50px;
-    position: absolute;
-    left: 50%;
-    top: 42px;
-   }
-  
-   .bandeira2{
-    width: 50px;
-     position: absolute;
-     left: 50%;
-     top: 140px;
-    }
-  
-    .bandeira3{
-     width: 60px;
-     position: absolute;
-     left: 50%;
-     top: 240px;
-     }
-  
-     .bandeira4{
-      width: 50px;
-      position: absolute;
-      left: 50%;
-      top: 340px;
-     }
-  
-    .bandeira5{
-     width: 50px;
-     position: absolute;
-     left: 50%;
-     top: 440px;
-     }
-  
-     .bandeira6{
-      width: 50px;
-      position: absolute;
-      left: 50%;
-      top: 540px;
-      }
-  
-      .bandeira7{
-       width: 50px;
-      position: absolute;
-      left: 50%;
-      top: 640px;
-      }
-  
-       .bandeira8{
-        width: 50px;
-        position: absolute;
-        left: 50%;
-        top: 740px;
-        }
-  
-  
-        .pontos1{
-          font-size: 20px;
-          position: absolute;
-          left: 63%;
-          top: 45px;
-      }
-  
-      .pontos2{
-        font-size: 20px;
-        position: absolute;
-        left: 63%;
-        top: 142px;
-    }
-  
-    .pontos3{
-      font-size: 20px;
-      position: absolute;
-      left: 63%;
-      top: 242px;
-  }
-  
-  .pontos4{
-    font-size: 20px;
-    position: absolute;
-    left: 63%;
-    top: 342px;
-  }
-  
-  .pontos5{
-    font-size: 20px;
-    position: absolute;
-    left: 63%;
-    top: 442px;
-  }
-  
-  .pontos6{
-    font-size: 20px;
-    position: absolute;
-    left: 63%;
-    top: 542px;
-  }
-  
-  .pontos7{
-    font-size: 20px;
-    position: absolute;
-    left: 63%;
-    top: 642px;
-  }
-  
-  .pontos8{
-    font-size: 20px;
-    position: absolute;
-    left: 63%;
-    top: 742px;
-  }
-  
-  .perfil1 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 43px;
-  }
-  
-  .perfil2 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 153px;
-  }
-  
-  .perfil3 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 253px;
-  }
-  
-  .perfil4 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 353px;
-  }
-  
-  .perfil5 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 453px;
-  }
-  
-  .perfil6 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 553px;
-  }
-  
-  .perfil7 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 653px;
-  }
-  
-  .perfil8 {
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    right: 30px;
-    border-radius: 10px;
-    cursor: pointer;
-    top: 753px;
-  }
-  
-  
-  
-  .pontosmag{
-      font-size: 23px;
-      position: relative;
-      left: 60%;
-      top: 45px;
-  }
-  
-  .nome{
-      font-size: 23px;
-      position: relative;
-      left: 22%;
-      top:72px ;
-  }
-  
-  .fotopais{
-      position: absolute;
-      transform: translateX(-50%);
-      width: 40px;
-      left: 49%;
-      top: 130px;
-  }
-  
-  .tipo{
-      display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top:-55px ;
-  }
-  
-  .trofeu{
-  width: 100px;
+
+
+.div1rank{
+  width: 82vw;
+  height: 200vh; 
+  border: 2px;
   position: absolute;
-  top: 60px;
-  }
-  
-  .trofeu2{
-    width: 100px;
-    position: absolute;
-    top: 60px;
-    left: 85%; 
-  }
-  
-  .perfil9{
-    position: absolute;
-    background-color: rgb(180, 180, 180);
-    color: white;
-    padding: 5px 10px;
-    left: 44.5%;
+  left:16%;
+  top: 405%;
+    border-style: solid;
     border-radius: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #F5F8FA;
+}
+
+.titulodiv1{
+  font-size: 80px;
+  position: relative;
+  left: 40%;
+
+}
+
+.subtitulodiv1{
+  font-size:30px;
+  color: #BCCACD;
+  position: relative;
+  left: 42%;
+}
+
+.div1º{
+
+  width: 25vw;
+  height: 50vh; 
+  position: absolute;
+  top: 12%;
+  left: 2%;
+  background-color: #FFFFFF;
+}
+
+.div1º:hover{
+  transform: scale(1.1)
+}
+
+.div2º{
+
+  width: 25vw;
+  height: 50vh; 
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  background-color: #FFFFFF;
+}
+
+.div2º:hover{
+  transform: scale(1.1);
+}
+.div3º{
+
+  width: 25vw;
+  height: 50vh; 
+  position: absolute;
+  top: 12%;
+  right: 2%;
+  background-color: #FFFFFF;
+}
+
+.div3º:hover{
+  transform: scale(1.1);
+}
+.foto1º{
+  position: absolute;
+  transform: translateX(-50%);
+  width: 110px;
+  left: 50%;
+  top: 10%;
+  border-radius: 100px;
+}
+
+.nome1º{
+  font-size: 25px;
+  position: absolute;
+  left: 33%;
+  top: 40%;
+}
+
+.perfil1º{ 
+    position: absolute;
+    background-color: #F0F6F7;
+    color: #2DC3CD;
+    padding: 8px 50px;
+    border-radius: 30px;
     cursor: pointer;
-    top: 170px;  
-  }
+    top: 55%;
+    left: 30%;
+    font-size: 22px;
+}
+
+.barra1{
+  border-bottom: solid 2px rgb(170, 169, 169);
+  top:84.5%;
+  position: absolute;
+  width: 50.6vw;
+}
+
+.barra1-1{
+  border-bottom: solid 67px rgb(170, 169, 169);
+  height: 50vh;
+  width: 0.01vw; 
+  position: absolute;
+  left: 33%
+}
+
+.barra1-2{
+  border-bottom: solid 67px rgb(170, 169, 169);
+  height: 50vh;
+  width: 0.1vw; 
+  position: absolute;
+  left: 66%;
+
+}
+
+.bandeira1º{
+  width:3.5vw ;
+  position: absolute;
+  left:43% ;
+  top:87% ;
+
+}
+
+.idade1º{
+font-size: 20px;
+position: absolute;
+left: 8.5%;
+top: 90%;
+}
+
+.pontos1º{
+  font-size: 20px;
+  position: absolute;
+  left: 72%;
+  top: 90%;
+}
+  
+.medalhaouro{
+  width: 4vw;
+  position: absolute;
+  left: 49%;
+  top: 19%;
+}
 
 
 
 
+<<<<<<< Updated upstream
+=======
+.div4º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 48%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div4º:hover{
+  transform: scale(1.03);
+}
+
+.lugar4º{
+  top:30px ;
+  position: absolute;
+  left: 20px;
+  font-size: 40px;
+  color: rgb(141, 141, 141);
+}
+
+.foto4º{
+  position: absolute;
+  width: 75px;
+  left: 6%;
+  top: 12%;
+  border-radius: 100px;
+}
+
+.nome4º{
+  font-size: 25px;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+
+.idade4º{
+  font-size: 25px;
+  position: absolute;
+  left: 65%;
+  top: 35%;
+}
+
+.bandeira4º{
+  width:3.5vw ;
+  position: absolute;
+  left:77% ;
+  top: 29% ;
+ 
+}
+
+.pontos4º{
+  font-size: 25px;
+  position: absolute;
+  left: 90%;
+  top: 35%;
+}
+
+.subtitulorank{
+  color: #2DC3CD;
+  font-size: 20px;
+  position: absolute;
+  left:2.8% ;
+  top: 46%;
+}
+
+.subtitulonome{
+  color: #2DC3CD;
+  font-size: 20px;
+  position: absolute;
+  left:20% ;
+  top: 46%;
+}
+
+.subtituloidade{
+  color: #2DC3CD;
+  font-size: 20px;
+  position: absolute;
+  left:63.5% ;
+  top: 46%;
+}
+
+.subtitulopaís{
+  color: #2DC3CD;
+  font-size: 20px;
+  position: absolute;
+  left:76.5% ;
+  top: 46%;
+}
+
+.subtitulopontos{
+  color: #2DC3CD;
+  font-size: 20px;
+  position: absolute;
+  left:88% ;
+  top: 46%;
+}
+
+.div5º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div5º:hover{
+  transform: scale(1.03);
+}
+
+.div6º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 62%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div6º:hover{
+  transform: scale(1.03);
+}
+
+.div7º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 69%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div7º:hover{
+  transform: scale(1.03);
+}
+
+.div8º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 76%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div8º:hover{
+  transform: scale(1.03);
+}
+
+.div9º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 83%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div9º:hover{
+  transform: scale(1.03);
+}
+
+.div10º{
+  width: 78vw;
+  height: 12vh; 
+  position: absolute;
+  top: 90%;
+  left: 2%;
+  background-color: #FFFFFF;  
+}
+
+.div10º:hover{
+  transform: scale(1.03);
+}
+
+.barra2{
+  border-bottom: solid 106px rgb(170, 169, 169);
+  height: 1vh;
+  width: 0.01vw; 
+  position: absolute;
+  left: 60%
+}
+
+.barra2-1{
+  border-bottom: solid 106px rgb(170, 169, 169);
+  height: 1vh;
+  width: 0.01vw; 
+  position: absolute;
+  left: 72.5%
+}
+
+.barra2-2{
+  border-bottom: solid 106px rgb(170, 169, 169);
+  height: 1vh;
+  width: 0.01vw; 
+  position: absolute;
+  left: 86%;
+
+}
+>>>>>>> Stashed changes
 
