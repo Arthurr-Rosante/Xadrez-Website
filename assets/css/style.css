@@ -9,6 +9,7 @@
     --button-shadow1: black;
     --button-shadow2: #c765ff;
     --section-color: #FFFF;
+
 }
 
 .dark:root {
@@ -22,6 +23,7 @@
     --button-shadow1: #00f2ff;
     --button-shadow2: #0048ff;
     --section-color: rgb(43, 33, 27);
+
 }
 
 * {
@@ -251,6 +253,19 @@ section:nth-of-type(8){
     text-align: center;
     z-index: 2;
 }
+
+.logo {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid black;
+  background-color: var(--degrade-color2);
+  border-radius: 50%;
+}
+
 .botao-aprender{
     background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     border-style: solid;
@@ -288,14 +303,17 @@ section:nth-of-type(8){
 .icone1{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     color: var(--icon-color);
+    overflow: hidden;
 }
 .icone2{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     color: var(--icon-color);
+    overflow: hidden;
 }
 .icone3{
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     color: var(--icon-color);
+    overflow: hidden;
 }
 .icone1:hover{
     font-size: 115%;
@@ -387,6 +405,7 @@ section:nth-of-type(8){
     box-shadow: 0 0 20px #a3a3a3;
 }
 .botao-inscrever {
+  overflow: hidden;
     background: #a3a3a3;
     padding: 10px;
     width: 80%;
@@ -516,7 +535,7 @@ section:nth-of-type(8){
     left: 1.7%;
     right: 0%;
     z-index: 2;
-    opacity: 100%;
+    opacity: 1;
     z-index: 1;
 }
 .background-pag1{
@@ -527,8 +546,9 @@ section:nth-of-type(8){
     opacity: 70%;
 }
 .back-titulo{
-    position: relative;
-    left: 5%;
+    position: absolute;
+    left: 30%;
+    transform: translateX(-30%);
     top: 10%;
     background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     width: 60%;
@@ -542,8 +562,9 @@ section:nth-of-type(8){
     color: white;
     font-size: 350%;
     position: absolute;
-    top: 65%;
-    left: 7%;
+    top: 50%;
+    left: 40%;
+    transform: translateX(-40%);
     max-width: 70%;
     font-family: 'AR One Sans', sans-serif;
 }
@@ -564,20 +585,22 @@ section:nth-of-type(8){
 /*pag 2*/
 .video{
     position: absolute;
-    left: 5%;
-    top: 24%;
-    width: 40%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 150px;
+    width: 600px;
     z-index: 3;
     border-radius: 10px;
     border-style: solid;
 }
 .texto-pag2{
-    color: white;
-    position: absolute;
-    left: 50%;
-    top: 25%;
-    max-width: 45%;
-    z-index: 3;
+  color: white;
+  width: 500px;
+  height: fit-content;
+  position: absolute;
+  right: 200px;
+  text-align: justify;
+  z-index: 3;
 }
 .historia-titulo{
     font-family: 'Noto Sans', sans-serif;
@@ -591,10 +614,33 @@ section:nth-of-type(8){
 }
 
 /*fim pag 2*/
+/* pag 3*/
+.texto-pag3 {
+  color: white;
+  z-index: 3;
+  width: 800px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: justify;
+
+}
+/*fim pag 3*/
+/*pag 4*/
+.texto-pag4 {
+  color: white;
+  z-index: 3;
+  width: 1000px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: justify;
+}
+/*fim pag 4*/
 
 
 
-/*pagina3 rank*/
+/* rank*/
 
 .pag2{
     width: 100vw;
