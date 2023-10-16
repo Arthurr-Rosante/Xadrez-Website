@@ -689,19 +689,20 @@ border-style: solid;
     border-style: solid;
     border-radius: 10px;
     color: rgb(0, 0, 0);
-    background-color: #F5F8FA;
+    background-color: var(--background-color);
 }
 
 .titulodiv1{
   font-size: 80px;
   position: relative;
   left: 40%;
+  color: var(--degrade-color1);
 
 }
 
 .subtitulodiv1{
   font-size:30px;
-  color: #BCCACD;
+  color: var(--degrade-color1);
   position: relative;
   left: 42%;
 }
@@ -713,11 +714,14 @@ border-style: solid;
   position: absolute;
   top: 12%;
   left: 2%;
-  background-color: #FFFFFF;
+  background: linear-gradient(120deg, var(--button-shadow1) 1%, var(--button-shadow2));
+  border-radius: 20px;
+  color: var(--section-color);
 }
 
 .div1º:hover{
-  transform: scale(1.1)
+  transform: scale(1.1);
+  box-shadow: 0 0 10px var(--box-shadow);
 }
 
 .div2º{
@@ -727,11 +731,14 @@ border-style: solid;
   position: absolute;
   top: 12%;
   left: 35%;
-  background-color: #FFFFFF;
+  background: linear-gradient(120deg, var(--button-shadow1) 1%, var(--button-shadow2));
+  border-radius: 20px;
+  color: var(--section-color);
 }
 
 .div2º:hover{
   transform: scale(1.1);
+  box-shadow: 0 0 10px var(--box-shadow);
 }
 .div3º{
 
@@ -740,11 +747,14 @@ border-style: solid;
   position: absolute;
   top: 12%;
   right: 2%;
-  background-color: #FFFFFF;
+  background: linear-gradient(120deg, var(--button-shadow1) 1%, var(--button-shadow2));
+  border-radius: 20px;
+  color: var(--section-color);
 }
 
 .div3º:hover{
   transform: scale(1.1);
+  box-shadow: 0 0 10px var(--box-shadow);
 }
 .foto1º{
   position: absolute;
@@ -775,14 +785,14 @@ border-style: solid;
 }
 
 .barra1{
-  border-bottom: solid 2px rgb(170, 169, 169);
+  border-bottom: solid 2px var(--section-color);
   top:84.5%;
   position: absolute;
   width: 50.6vw;
 }
 
 .barra1-1{
-  border-bottom: solid 67px rgb(170, 169, 169);
+  border-bottom: solid 67px var(--section-color);
   height: 50vh;
   width: 0.01vw; 
   position: absolute;
@@ -790,7 +800,7 @@ border-style: solid;
 }
 
 .barra1-2{
-  border-bottom: solid 67px rgb(170, 169, 169);
+  border-bottom: solid 67px var(--section-color);
   height: 50vh;
   width: 0.1vw; 
   position: absolute;
@@ -827,11 +837,6 @@ top: 90%;
   top: 19%;
 }
 
-
-
-
-<<<<<<< Updated upstream
-=======
 .div4º{
   width: 78vw;
   height: 12vh; 
@@ -891,7 +896,7 @@ top: 90%;
 }
 
 .subtitulorank{
-  color: #2DC3CD;
+  color: var(--degrade-color2);
   font-size: 20px;
   position: absolute;
   left:2.8% ;
@@ -899,7 +904,7 @@ top: 90%;
 }
 
 .subtitulonome{
-  color: #2DC3CD;
+  color: var(--degrade-color2);
   font-size: 20px;
   position: absolute;
   left:20% ;
@@ -907,7 +912,7 @@ top: 90%;
 }
 
 .subtituloidade{
-  color: #2DC3CD;
+  color: var(--degrade-color2);
   font-size: 20px;
   position: absolute;
   left:63.5% ;
@@ -915,7 +920,7 @@ top: 90%;
 }
 
 .subtitulopaís{
-  color: #2DC3CD;
+  color: var(--degrade-color2);
   font-size: 20px;
   position: absolute;
   left:76.5% ;
@@ -923,7 +928,7 @@ top: 90%;
 }
 
 .subtitulopontos{
-  color: #2DC3CD;
+  color: var(--degrade-color2);
   font-size: 20px;
   position: absolute;
   left:88% ;
@@ -1032,5 +1037,5 @@ top: 90%;
   left: 86%;
 
 }
->>>>>>> Stashed changes
+
 
