@@ -244,7 +244,7 @@ section:nth-of-type(8){
 .menu{
     background-color: var(--background-color);
     width: 15vw;
-    height: 101vh;
+    height: 103vh;
     position: fixed;
     top: -2vh;
     left: -1vw;
@@ -697,7 +697,7 @@ border-style: solid;
   position: relative;
   left: 40%;
   color: var(--degrade-color1);
-
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .subtitulodiv1{
@@ -705,6 +705,7 @@ border-style: solid;
   color: var(--degrade-color1);
   position: relative;
   left: 42%;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .div1º{
@@ -1038,4 +1039,134 @@ top: 90%;
 
 }
 
+.div1comunidade{
+width: 82vw;
+height: 390vh; 
+border: 2px;
+position: absolute;
+left:16%;
+top: 630%;
+  border-style: solid;
+  border-radius: 10px;
+  color: var(--degrade-color1);
+  background-color: var(--background-color);
+}
 
+
+.div2comunidade{
+
+  width: 60vw;
+  height: 86vh; 
+  position: absolute;
+  top: 6%;
+  left: 15%;
+  background-color: var(--background-color);
+}
+
+.videodiv2{
+  width: 60vw;
+  height: 59vh;
+}
+
+.titulodiv2{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 39px;
+}
+
+.subtitulodiv2{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #686767;
+}
+
+.div3comunidade{
+
+  width: 34vw;
+  height: 72vh; 
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  background-color: var(--background-color);
+}
+
+.videodivs{
+  width: 34vw;
+  height: 48vh;
+
+}
+
+.titulodivs{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px;
+}
+
+.subtitulodivs{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: #686767;
+}
+
+.div4comunidade{
+
+  width: 34vw;
+  height: 74vh; 
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  background-color: var(--background-color);
+}
+
+.div5comunidade{
+
+  width: 34vw;
+  height: 90vh; 
+  position: absolute;
+  top: 51%;
+  left: 5%;
+  background-color: var(--background-color);
+}
+
+.div6comunidade{
+
+  width: 34vw;
+  height: 90vh; 
+  position: absolute;
+  top: 51%;
+  right: 5%;
+  background-color: var(--background-color);
+}
+
+.div7comunidade{
+
+  width: 34vw;
+  height: 90vh; 
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: var(--background-color);
+}
+
+.div8comunidade{
+
+  width: 34vw;
+  height: 90vh; 
+  position: absolute;
+  top: 75%;
+  right: 5%;
+  background-color: var(--background-color);
+}
+
+.titulodiv1comu{
+  font-size: 80px;
+  position: relative;
+  left: 20%;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.subtitulodiv1comu{
+  font-size:30px;
+  color: var(--degrade-color1);
+  position: relative;
+  left: 40%;
+  font-family: 'Noto Sans', sans-serif;
+}
