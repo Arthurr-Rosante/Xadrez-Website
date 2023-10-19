@@ -546,9 +546,14 @@ section:nth-of-type(8){
     opacity: 70%;
 }
 .back-titulo{
+<<<<<<< Updated upstream
     position: absolute;
     left: 30%;
     transform: translateX(-30%);
+=======
+    position: relative;
+    left: 10%;
+>>>>>>> Stashed changes
     top: 10%;
     background: linear-gradient(90deg, var(--degrade-color1), var(--degrade-color2));
     width: 60%;
@@ -562,9 +567,14 @@ section:nth-of-type(8){
     color: white;
     font-size: 350%;
     position: absolute;
+<<<<<<< Updated upstream
     top: 50%;
     left: 40%;
     transform: translateX(-40%);
+=======
+    top: 65%;
+    left: 13%;
+>>>>>>> Stashed changes
     max-width: 70%;
     font-family: 'AR One Sans', sans-serif;
 }
@@ -585,15 +595,22 @@ section:nth-of-type(8){
 /*pag 2*/
 .video{
     position: absolute;
+<<<<<<< Updated upstream
     top: 50%;
     transform: translateY(-50%);
     left: 150px;
     width: 600px;
+=======
+    left: 10%;
+    top: 27%;
+    width: 30%;
+>>>>>>> Stashed changes
     z-index: 3;
     border-radius: 10px;
     border-style: solid;
 }
 .texto-pag2{
+<<<<<<< Updated upstream
   color: white;
   width: 500px;
   height: fit-content;
@@ -601,6 +618,14 @@ section:nth-of-type(8){
   right: 200px;
   text-align: justify;
   z-index: 3;
+=======
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    max-width: 40%;
+    z-index: 3;
+>>>>>>> Stashed changes
 }
 .historia-titulo{
     font-family: 'Noto Sans', sans-serif;
